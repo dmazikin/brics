@@ -1,5 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 @import "base/variables";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Open+Sans&display=swap');
 @import "base/mixins";
 body {
     margin: 0;
@@ -14,6 +15,23 @@ body {
 ul {
     padding: 0;
     margin: 0;
+}
+
+@font-face {
+    font-family: 'Acrom Bold';
+    src: url('../fonts/Acrom-Bold.eot');
+    src: url('../fonts/Acrom-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Acrom-Bold.woff') format('woff'), url('../fonts/Acrom-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.test {
+    color: #9191A3;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 h1,
