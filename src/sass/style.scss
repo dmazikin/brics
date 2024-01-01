@@ -1,10 +1,15 @@
 @import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
 @import "base/variables";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Open+Sans&display=swap');
 @import "base/mixins";
 body {
     margin: 0;
     padding: 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .container {
@@ -13,6 +18,7 @@ body {
 }
 
 ul {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -25,15 +31,6 @@ ul {
     font-style: normal;
 }
 
-.test {
-    color: #9191A3;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 h1,
 h2,
 h3,
@@ -42,3 +39,17 @@ h5,
 h6 {
     margin-bottom: 0;
 }
+
+button {
+    border: none;
+    background: none;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@import "components/btn";
+@import "blocks/header";
