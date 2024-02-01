@@ -886,9 +886,28 @@
     .footer-menu__link {
         font-size: 13px;
     }
+    .about-title {
+        font-size: 40px;
+    }
+    .head-about-img {
+        width: 160px;
+    }
 }
 
 @media (max-width: 575px) {
+    .head-about-img {
+        display: none;
+    }
+    .areas-icon {
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+    .areas-icon__inner {
+        margin-bottom: 10px;
+    }
+    .areas__text {
+        text-align: center;
+    }
     .brics-subtitle {
         font-size: 25px;
     }
@@ -1086,13 +1105,6 @@
     }
     .bg_mobile {
         background-color: #fff;
-    }
-    .areas-icon__inner {
-        width: 48px;
-        height: 48px;
-    }
-    .areas__img {
-        width: 25px;
     }
     .areas__text {
         font-size: 13px;

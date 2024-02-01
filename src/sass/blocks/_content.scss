@@ -102,36 +102,6 @@
     }
 }
 
-.areas {
-    padding-top: 30px;
-    &-icons {
-        padding-top: 40px;
-    }
-    &-icon {
-        display: flex;
-        align-items: center;
-        margin-bottom: 69px;
-        &__inner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 87px;
-            height: 87px;
-            background: #fff;
-            border: 1px solid #000033;
-            border-radius: 5px;
-            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-        }
-    }
-    &__text {
-        margin-left: 31px;
-        word-wrap: break-word;
-        font-size: 18px;
-        font-weight: 700;
-        width: 219px;
-    }
-}
-
 .index-news {
     min-height: 600px;
 }
