@@ -17,6 +17,95 @@
     }
 }
 
+.about-title {
+    color: #003;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Acrom Bold", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about-promo-left {
+    border-radius: 5px;
+    border: 1px solid #003;
+    background: #FFF;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    min-height: 300px;
+}
+
+.about-promo-left-top {
+    display: flex;
+    justify-content: center;
+    font-family: "Acrom Bold", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000033;
+}
+
+.about-promo-left-img {
+    width: 65px;
+}
+
+.about-promo-left-title {
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.about-promo-left-bottom {
+    padding: 37px;
+    text-align: center;
+    color: #003;
+    text-align: center;
+    font-family: "Acrom Bold", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about-promo-right-top {
+    color: #003;
+    font-family: "Acrom Bold", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000033;
+    margin-bottom: 20px;
+}
+
+.about-promo-right-bottom {
+    font-size: 18px;
+}
+
+.btn__about-download {
+    color: #003;
+    text-align: center;
+    font-family: "Acrom Bold", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 50px;
+    &:hover {
+        color: #003;
+        background: #CCB8A0;
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
 .text {
     margin-bottom: 35px;
 }
@@ -86,7 +175,7 @@
     position: relative;
     min-height: 321px;
     padding-top: 45px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     &-desc {
         color: #003;
         font-size: 18px;

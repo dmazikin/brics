@@ -139,8 +139,6 @@
     }
     .about-promo-right {
         text-align: center;
-        padding-left: 72px;
-        padding-right: 72px;
     }
     .about-promo-right-bottom {
         margin-top: 25px;
@@ -667,6 +665,14 @@
         img {
             width: 150px;
         }
+    }
+    .about-promo-left-title {
+        font-size: 20px;
+    }
+    .about-promo-left-top {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
     }
     .timeline-list-type::before {
         border: none;
@@ -1199,6 +1205,20 @@
     .btn-add-photo {
         margin-bottom: 20px;
     }
+    .about-promo-left-title {
+        font-size: 15px;
+        margin-left: 0;
+    }
+    .about-promo-right-top {
+        font-size: 15px;
+    }
+    .about-promo-right-bottom {
+        font-size: 15px;
+    }
+    .about-promo-left-bottom {
+        padding: 0;
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1245,9 +1265,6 @@
     .about-promo-left-top {
         padding-left: 0;
         padding-right: 0;
-    }
-    .about-promo-left-title {
-        font-size: 14px;
     }
     .about-promo-left-bottom,
     .about-promo-right {
