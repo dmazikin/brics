@@ -1,0 +1,131 @@
+.form-auth-wrapper {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.25);
+    min-height: 541px;
+    width: 500px;
+    margin: 105px auto;
+    margin-bottom: 105px;
+    padding-bottom: 23px;
+}
+
+.form-auth-head {
+    padding: 43px 29px 43px 33px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.form-auth-head-img {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.line-form {
+    background-color: #E3E3E3;
+    height: 2px;
+    margin-bottom: 32px;
+}
+
+.form-auth-title {
+    color: #000;
+    text-align: center;
+    margin-bottom: 27px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form-auth {
+    padding: 0 90px 0 90px;
+}
+
+.form-links-auth {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 0 90px 0 90px;
+}
+
+.link-google-auth {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.form-login-auth-privacy {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 12px;
+    padding: 0 90px 0 90px;
+}
+
+.error-login {
+    display: none;
+    color: #F92323;
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 80px;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background-image: none;
+}
+
+.form-auth-link-back {
+    display: inline-block;
+    position: relative;
+    left: -90px;
+}
+
+.circle-privacy {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url('../../icons/circle-privacy.svg');
+    background-repeat: no-repeat;
+    margin: 49px auto;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    background-position: center;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -150px;
+        top: 6px;
+        height: 2px;
+        width: 110px;
+        background-color: #000;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: -150px;
+        top: 6px;
+        height: 2px;
+        width: 110px;
+        background-color: #000;
+    }
+}
+
+.form-auth-success {
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-links-auth-success,
+.form-privacy-auth-success {
+    padding: 0 5px 0 5px;
+}

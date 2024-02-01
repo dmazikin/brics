@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Brics WBA</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-header-top">
+        <div class="container d-flex justify-content-between">
+          <form class="d-flex header-search">
+            <input class="form-control me-2 header-search__input" type="search" aria-label="Search" />
+            <button class="btn btn-outline-success btn__search" type="submit">
+              <img src="icons/search_head.svg" alt="search" />
+            </button>
+          </form>
+          <div class="header-auth">
+            <a href="#" class="btn btn__join">Join</a>
+            <a href="#" class="header-auth__login btn mobile_hidden_auth">Log In</a>
+            <div class="dropdown header-auth-dropdown">
+              <button
+                class="btn option-lang-eng dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="icons/lang_icon.png" alt="" class="option-lang-img" /> Eng
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rus</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.header-auth -->
+        </div>
+        <!-- /.navbar-top -->
+      </div>
+      <!-- /.container-header-top -->
+      <nav class="navbar navbar-expand-lg navbar-light navbar-test">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="mobile-head">
+              <div class="title title__mobile-menu">MENU</div>
+              <div class="mobile-close"></div>
+              <div class="mobile-auth">
+                <div class="dropdown header-auth-dropdown-mobile">
+                  <button
+                    class="btn option-lang-eng dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="icons/lang_icon.png" alt="" class="option-lang-img" /> Eng
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Rus</a></li>
+                  </ul>
+                </div>
+                <a href="#" class="mobile-header-auth__login btn">Log In</a>
+              </div>
+            </div>
+            <!-- /.mobile-head -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-test">
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="about.html">about us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Documents</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item menu-item__last-heart" href="sponsors.html"
+                      ><span>❤️</span>Sponsors</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Documents</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="national.html">National Chapters</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="our-members.html">Our members</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item nav-item-test">
+                <a class="nav-link" href="calendar.html">Calendar</a>
+              </li>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Multimedia
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="multimedia.html">Multimedia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Business</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">News</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item nav-item-test">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /.header -->
+    <div class="body-page">
+      <main class="main-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-position-top">
+                  <img src="img/event-page/image100.png" class="card-img-top" alt="event-card" />
+                  <div class="card-tag">
+                    <img src="icons/event.svg" alt="tag" class="card-icon" />
+                    <span class="card-tag-name">EVENT</span>
+                  </div>
+                  <div class="card-star">
+                    <img src="icons/star_featured.svg" alt="star" class="card-icon" />
+                  </div>
+                </div>
+                <div class="card-middle">
+                  <h5 class="card-title">Meeting of the BRICS WBA</h5>
+                  <div class="card-views">
+                    <img src="icons/visibility_icon.svg" alt="view" class="card-icon" />
+                    <span class="card-views-count">308</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="card-event-date">
+                        <img src="icons/calendar_icon.svg" alt="date-event" class="card-icon" />
+                        <span class="date">21.12.21</span>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card-event-location">
+                        <img src="icons/location.svg" alt="event-location" class="card-icon" />
+                        <span class="location-event">Beijing, China</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--card-event-->
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-position-top">
+                  <img src="img/multimedia/image155.png" class="card-img-top" alt="event-card" />
+                  <div class="card-tag">
+                    <img src="img/multimedia/icon-play.png" alt="tag" class="card-icon" />
+                    <span class="card-tag-name">VIDEO</span>
+                  </div>
+                  <div class="card-star">
+                    <img src="icons/star_featured.svg" alt="star" class="card-icon" />
+                  </div>
+                  <div class="card-tag_duration">35 minutes</div>
+                </div>
+                <div class="card-middle">
+                  <h5 class="card-title">
+                    Conference recording: Development strategy 2022 under quarantine conditions
+                  </h5>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card-event-date">
+                        <img src="icons/calendar_icon.svg" alt="date-event" class="card-icon" />
+                        <span class="date">21.12.21</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-views card-views_position">
+                        <img src="icons/visibility_icon.svg" alt="view" class="card-icon" />
+                        <span class="card-views-count">308</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--card-video-->
+            </div>
+            <div class="col-md-6">3</div>
+            <div class="col-md-6">4</div>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </main>
+      <!-- /.main-wrapper -->
+    </div>
+    <!-- /.body-page -->
+    <footer class="footer">
+      <div class="container-fluid footer-container">
+        <div class="row footer-wrapper">
+          <div class="col-lg-12 col-xl-2 footer-logo-wrapp">
+            <div class="footer-logo">
+              <a href="/" class="footer-logo__link">
+                <img src="icons/footer_logo.svg" alt="logo_footer" class="footer-logo__img" />
+              </a>
+            </div>
+            <!-- /.footer-logo -->
+            <div class="footer-docs">
+              <a href="#" class="footer-docs__link mb-2">Terms of use</a>
+              <a href="#" class="footer-docs__link mb-3">Privacy Policy</a>
+            </div>
+            <!-- /.footer-docs -->
+            <div class="footer-wrapper-cap">
+              <a href="#" class="btn btn__footer-sponsors mb-3">SPONSORS</a>
+              <!-- /.btn btn__footer-sopsors -->
+              <div class="footer-cap">BRICS WBA ® 2024</div>
+            </div>
+            <!-- /.footer-cap -->
+          </div>
+          <div class="col-xl-7 col-lg-12">
+            <nav class="footer-nav">
+              <ul class="footer-menu">
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">About</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">National Chapters</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Our members</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Calendar</a>
+                </li>
+
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">News</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Projects</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Business</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Documents</a>
+                </li>
+
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Multimedia</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Contacts</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Sponsors</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-12 col-xl-3">
+            <div class="footer-subscribe">
+              <div class="footer-subscribe__title mb-2">subscription</div>
+              <form class="form-subscribe">
+                <div class="mb-3">
+                  <input
+                    placeholder="Your e-mail"
+                    type="email"
+                    class="form-control form-subscribe__input"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input form-subscribe__chexbox" id="exampleCheck1" />
+                  <label class="form-check-label form-subscribe__label" for="exampleCheck1"
+                    >I agree to the processing of personal data</label
+                  >
+                </div>
+                <button type="submit" class="btn btn__footer-subscribe">subscribe</button>
+              </form>
+              <div class="footer-feedback">
+                <a href="tel:+74956465632 " class="footer-phone">+7 495 646 56 32 </a>
+                <a href="email:brics@globalrustrade.com" class="footer-mail">brics@globalrustrade.com</a>
+              </div>
+            </div>
+            <!-- /.footer-subscride -->
+          </div>
+        </div>
+      </div>
+      <div class="rainbow">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2 rainbow_bg-1"></div>
+            <div class="col-2 rainbow_bg-2"></div>
+            <div class="col-2 rainbow_bg-3"></div>
+            <div class="col-2 rainbow_bg-4"></div>
+            <div class="col-2 rainbow_bg-5"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,155 @@
+.header-search {
+    position: relative;
+    .btn__search {
+        top: 6px;
+        left: 10px;
+        width: 15px;
+    }
+}
+
+.container-header-top {
+    padding: 5px;
+}
+
+.btn__join,
+.header-auth__login,
+.option-lang-eng {
+    height: 0;
+    width: 90px;
+}
+
+.header-auth {
+    align-items: center;
+}
+
+.navbar-nav-test {
+    justify-content: flex-end;
+}
+
+.nav-item-test {
+    text-transform: uppercase;
+    font-family: "Acrom Bold", sans-serif;
+    padding-left: 50px;
+}
+
+.navbar {
+    height: 66px;
+}
+
+.body-page {
+    position: relative;
+    z-index: -2;
+}
+
+.dropdown-menu-nav {
+    background: #fff;
+    z-index: -1;
+    width: 100%;
+    min-width: 280px;
+}
+
+.dropdown-menu-nav-item {
+    color: #000033;
+    padding-top: 20px;
+}
+
+.menu-item__last-heart {
+    justify-content: center;
+}
+
+.container-slide-content {
+    min-height: 630px;
+    font-family: "Acrom Bold", sans-serif;
+}
+
+.brics-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brics_size {
+    font-family: "Acrom Bold", sans-serif;
+    font-size: 15rem;
+    text-transform: uppercase;
+}
+
+.color_b {
+    color: #27a261;
+}
+
+.color_r {
+    color: #374b92;
+}
+
+.color_i {
+    color: #f89540;
+}
+
+.color_c {
+    color: #e7423c;
+}
+
+.color_s {
+    color: #fbd32c;
+}
+
+.brics-subtitle {
+    color: #000033;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.brics-info {
+    color: #000033;
+    padding-top: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+    width: 90%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.index-slide-img {
+    position: absolute;
+    opacity: 0.7;
+    display: block;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+.index-swiper-prev svg,
+.index-swiper-next svg {
+    width: 10px;
+}
+
+.index-swiper-prev,
+.index-swiper-next {
+    border-radius: 10px;
+    background-color: #FFF;
+    width: 40px;
+    height: 40px;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #9191A3;
+}
+
+.index-swiper-prev:hover,
+.index-swiper-next:hover {
+    background-color: #000033;
+}
+
+.index-swiper-prev:hover path,
+.index-swiper-next:hover path {
+    fill: #FFF;
+}
+
+.index-swiper-next svg {
+    transform: rotate(180deg);
+}
+
+.index-swiper-next {
+    right: 30px;
+}
+
+.index-swiper-prev {
+    left: 30px;
+}

@@ -1,0 +1,38 @@
+.sidebar {
+    border-radius: 5px;
+    border: 1px solid #003;
+    background: #FFF;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    min-height: 213px;
+    margin-bottom: 27px;
+    &-title {
+        padding-bottom: 11px;
+        position: relative;
+        background: #EDEDF2;
+        min-height: 44px;
+        border-radius: 5px 5px 0px 0px;
+        border-bottom: 1px solid #003;
+        padding-left: 52px;
+        color: #003;
+        font-family: 'Acrom Bold', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-top: 15px;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url('../../icons/Group_605.svg');
+            background-repeat: no-repeat;
+            width: 26px;
+            height: 27px;
+            left: 20px;
+            top: 13px;
+        }
+    }
+    &-nav {
+        padding-left: 22px;
+        padding-top: 25px;
+        padding-bottom: 23px;
+    }
+}

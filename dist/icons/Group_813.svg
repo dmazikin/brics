@@ -1,0 +1,20 @@
+<svg width="29" height="31" viewBox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="29" height="31" fill="#E3E3E3"/>
+<g id="Business" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="1569" transform="translate(-441 -297)" fill="white"/>
+<g id="Company card">
+<rect id="Rectangle 865" x="858.781" y="360.369" width="915.213" height="373.466" rx="5.5" transform="rotate(180 858.781 360.369)" fill="white" stroke="#C9C9C9"/>
+<path id="Rectangle 866" d="M198.758 44.1289L199.258 44.1289L199.258 43.6289L199.258 -12.5975L199.258 -13.0975L198.758 -13.0975L-50.93 -13.0975C-53.9676 -13.0975 -56.43 -10.635 -56.43 -7.59746L-56.43 43.629L-56.43 44.129L-55.93 44.129L198.758 44.1289Z" fill="#EDEDF2" stroke="#C9C9C9"/>
+<g id="Group 819">
+<g id="Group 813">
+<path id="icon/action/account_balance_24px" fill-rule="evenodd" clip-rule="evenodd" d="M0.09375 7.59961L14.3438 0.0996094L28.5938 7.59961V10.5996H0.09375V7.59961ZM14.3438 3.48961L22.1588 7.59961H6.52875L14.3438 3.48961ZM3.84375 13.5996H6.84375V24.0996H3.84375V13.5996ZM15.8438 13.5996V24.0996H12.8438V13.5996H15.8438ZM0.09375 27.0996V30.0996H28.5938V27.0996H0.09375ZM21.8438 13.5996H24.8438V24.0996H21.8438V13.5996Z" fill="#000033"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="1569" fill="white" transform="translate(-441 -297)"/>
+</clipPath>
+</defs>
+</svg>

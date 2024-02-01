@@ -1,75 +1,1211 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Brics WBA</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div class="body-img">
+      <img src="img/Group555.svg" alt="" />
+    </div>
     <header class="header">
-        <div class="header-logo">
-            <a href="/" class="header__logo">
-                <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
-            </a>
-            <div class="header__search">
-                <img src="icons/search_head.svg" alt="search" />
-            </div>
-        </div>
-        <!-- /.header-logo -->
-        <nav class="header-nav">
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">About</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">National Chapters</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">Our members</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">Calendar</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">News</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">Projects</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">Business</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">Documents</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">Multimedia</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link">Contacts</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-item__link menu-item__last-heart">Sponsors</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- /.menu -->
-        <div class="header-auth">
+      <div class="container-header-top">
+        <div class="navbar-top">
+          <div class="header-auth">
             <a href="#" class="btn btn__join">Join</a>
-            <a href="#" class="header-auth__login btn">Log In</a>
-            <div class="header-auth-dropdown">
-                <button class="btn header-auth__eng">Eng</button>
-                <button class="btn header-auth__rus">Rus</button>
+            <a href="#" class="header-auth__login btn mobile_hidden_auth">Log In</a>
+            <div class="dropdown header-auth-dropdown">
+              <button
+                class="btn option-lang-eng dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="icons/lang_icon.png" alt="" class="option-lang-img" /> Eng
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rus</a></li>
+              </ul>
             </div>
+          </div>
+          <!-- /.header-auth -->
         </div>
+        <!-- /.navbar-top -->
+      </div>
+      <!-- /.container-header-top -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
+          </a>
+          <form class="d-flex header-form-search">
+            <input class="form-control me-2 header-form-search__input" type="search" aria-label="Search" />
+            <button class="btn btn-outline-success btn__search" type="submit">
+              <img src="icons/search_head.svg" alt="search" />
+            </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="mobile-head">
+              <div class="title title__mobile-menu">MENU</div>
+              <div class="mobile-close"></div>
+              <div class="mobile-auth">
+                <div class="dropdown header-auth-dropdown-mobile">
+                  <button
+                    class="btn option-lang-eng dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="icons/lang_icon.png" alt="" class="option-lang-img" /> Eng
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Rus</a></li>
+                  </ul>
+                </div>
+                <a href="#" class="mobile-header-auth__login btn">Log In</a>
+              </div>
+            </div>
+            <!-- /.mobile-head -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="national.html">National Chapters</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="our-members.html">Our members</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calendar.html">Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bussines.html">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Documents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="multimedia.html">Multimedia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item__last-heart" href="sponsors.html"><span>❤️</span>Sponsors</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- /.header-auth -->
+      </nav>
     </header>
     <!-- /.header -->
-</body>
+    <section class="promo-index">
+      <div class="index-slider swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide carousel-slide">
+            <img src="img/index.png" alt="" />
+          </div>
+          <div class="swiper-slide carousel-slide">
+            <img src="img/index.png" alt="" />
+          </div>
+          <div class="swiper-slide carousel-slide">
+            <img src="img/index.png" alt="" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <!-- /.promo -->
+    <section class="about bg_mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 col-xl-3">
+            <div class="index-title">ABOUT</div>
+          </div>
+          <div class="col-12 col-lg-9 col-xl-9">
+            <div class="about-desc">
+              <p class="text">
+                The initiative of establishing the BRICS Women's Business Alliance was proposed by Russia at the First
+                International Women's Congress of the Shanghai Cooperation Organization (SCO) and the BRICS member
+                states on July 4, 2017.
+              </p>
+              <p class="text">
+                In the framework of the Russian BRICS Chairmanship, the Inaugural Meeting of the BRICS WBA took place on
+                July 20, 2020.
+              </p>
+            </div>
+            <div class="about-desc-btn-container">
+              <a href="#" class="btn btn__index">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.about -->
+    <section class="areas country_bg-gray areas_mobile-bg-white">
+      <div class="container">
+        <div class="index-title index-title_width">Areas of cooperation</div>
+        <div class="areas-icons">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="areas-icon">
+                <div class="areas-icon__inner">
+                  <img src="img/Group557.svg" alt="" class="areas__img" />
+                </div>
+                <div class="areas__text">Innovative development</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="areas-icon">
+                <div class="areas-icon__inner">
+                  <img src="img/Group1561.svg" alt="" class="areas__img" />
+                </div>
+                <div class="areas__text">Healthcare</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="areas-icon">
+                <div class="areas-icon__inner">
+                  <img src="img/Star2.svg" alt="" class="areas__img" />
+                </div>
+                <div class="areas__text">Creative industries and tourism</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="areas-icon">
+                <div class="areas-icon__inner">
+                  <img src="img/Vector.svg" alt="" class="areas__img" />
+                </div>
+                <div class="areas__text">Environmental sustainability and food security</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="areas-icon">
+                <div class="areas-icon__inner">
+                  <img src="img/Group558.svg" alt="" class="areas__img" />
+                </div>
+                <div class="areas__text">Inclusive economy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.areas-icons -->
+      </div>
+    </section>
+    <!-- /.areas -->
+    <section class="index-news">
+      <div class="index-title d-flex justify-content-center news-pt">News</div>
+      <div class="index-wrapper-swiper">
+        <div class="index-page-slider swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/news/image_153.png" alt="featured" />
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">BRICS Business Forum 2019</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Brazil, Rio-De-janeiro</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/news/image_153.png" alt="featured" />
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">BRICS Business Forum 2019</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Brazil, Rio-De-janeiro</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/news/image_154.png" alt="featured" />
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">the Inaugural Meeting of the BRICS WBA</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Beijing, China</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/news/image_153.png" alt="featured" />
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">BRICS Business Forum 2019</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Brazil, Rio-De-janeiro</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/news/image_154.png" alt="featured" />
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">the Inaugural Meeting of the BRICS WBA</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Beijing, China</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="index-slider-prev swiper-button-prev"></div>
+        <div class="index-slider-next swiper-button-next"></div>
+      </div>
+      <!-- /.index-wrapper-swiper -->
+    </section>
+    <!-- /.imdex-news -->
+    <section class="index-calendar country_bg-gray">
+      <div class="index-title d-flex justify-content-center news-pt">Calendar</div>
+      <div class="index-wrapper-swiper">
+        <div class="index-page-slider swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/multimedia/image155.png" alt="featured" />
+                </div>
+                <div class="featured-card__tag">
+                  <img src="img/multimedia/Group851.svg" alt="arcticle" />
+                  <span>EVENT</span>
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">Meeting of the BRICS WBA</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Brazil, Rio-De-janeiro</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/multimedia/image155.png" alt="featured" />
+                </div>
+                <div class="featured-card__tag">
+                  <img src="img/multimedia/Group851.svg" alt="arcticle" />
+                  <span>EVENT</span>
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">Meeting of the BRICS WBA</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Beijing, China</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/multimedia/image155.png" alt="featured" />
+                </div>
+                <div class="featured-card__tag">
+                  <img src="img/multimedia/Group851.svg" alt="arcticle" />
+                  <span>EVENT</span>
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">Meeting of the BRICS WBA</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Brazil, Rio-De-janeiro</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/multimedia/image155.png" alt="featured" />
+                </div>
+                <div class="featured-card__tag">
+                  <img src="img/multimedia/Group851.svg" alt="arcticle" />
+                  <span>EVENT</span>
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">Meeting of the BRICS WBA</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Beijing, China</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="card-info card-calendar">
+                <div class="card-info__img">
+                  <img src="img/multimedia/image155.png" alt="featured" />
+                </div>
+                <div class="featured-card__tag">
+                  <img src="img/multimedia/Group851.svg" alt="arcticle" />
+                  <span>EVENT</span>
+                </div>
+                <div class="card-info-title">
+                  <div class="title title__card-info">Meeting of the BRICS WBA</div>
+                </div>
+                <!-- /.card-title -->
+                <div class="post-publish card-info-calendar">
+                  <div class="post-publish__dates">
+                    <div class="post-publish__icon">
+                      <img
+                        src="icons/calendar_icon.svg"
+                        alt="calendar"
+                        class="post-publish__img card-info-calendar__img"
+                      />
+                    </div>
+                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                  </div>
+                  <div class="location">
+                    <img src="icons/location.svg" alt="" class="location__img" />
+                    <div class="location__city">Beijing, China</div>
+                  </div>
+                  <div class="views">
+                    <div class="view">
+                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                      <div class="view__count">308</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-info__date -->
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="index-slider-prev swiper-button-prev"></div>
+        <div class="index-slider-next swiper-button-next"></div>
+      </div>
+      <!-- /.index-wrapper-swiper -->
+    </section>
+    <!-- /.imdex-news -->
+    <section class="national">
+      <div class="flags">
+        <div class="title title__flags national-index-title">
+          <span class="title_left_small national-title_left_small"
+            >National
+            <div class="national-globus">
+              <img src="icons/globus.svg" alt="" /></div
+          ></span>
+          <span class="title_rigth_small national-title_right_small">Chapters</span> of the Alliance
+        </div>
+        <div class="line-box">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <!-- /.line-box -->
+        <div class="flags-desc">
+          Representatives per each BRICS country, who have founded their own businesses or are CEOs of large
+          entterprises, have overcome the main barriers and currently aim at entering international markets
+        </div>
+        <!-- /.flags-desc -->
+      </div>
+      <!-- /.flags -->
+      <div class="container">
+        <div class="national-tab-content tab-content" id="nav-tabContent">
+          <div class="national-tabs nav nav-tabs" id="nav-tab" role="tablist">
+            <a
+              class="national-tab active"
+              id="brazil-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#brazilTab"
+              type="button"
+              role="tab"
+              aria-controls="brazilTab"
+              aria-selected="true"
+              href="#"
+              role="button"
+            >
+              <img src="img/flags/brazil.png" alt="" class="flags-img" />
+            </a>
+            <a
+              class="national-tab"
+              id="russia-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#russiaTab"
+              type="button"
+              role="tab"
+              aria-controls="russiaTab"
+              aria-selected="false"
+              href="#"
+              role="button"
+            >
+              <img src="img/flags/russia.png" alt="" class="flags-img" />
+            </a>
+            <a
+              class="national-tab"
+              id="india-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#indiaTab"
+              type="button"
+              role="tab"
+              aria-controls="indiaTab"
+              aria-selected="false"
+              href="#"
+              role="button"
+            >
+              <img src="img/flags/india.png" alt="" class="flags-img" />
+            </a>
+            <a
+              class="national-tab"
+              id="china-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#chinaTab"
+              type="button"
+              role="tab"
+              aria-controls="chinaTab"
+              aria-selected="false"
+              href="#"
+              role="button"
+              href="#"
+              role="button"
+            >
+              <img src="img/flags/china.png" alt="" class="flags-img" />
+            </a>
+            <a
+              class="national-tab"
+              id="africa-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#africaTab"
+              type="button"
+              role="tab"
+              aria-controls="africaTab"
+              aria-selected="false"
+              href="#"
+              role="button"
+              href="#"
+              role="button"
+            >
+              <img src="img/flags/africa.png" alt="" class="flags-img" />
+            </a>
+            <div class="national-tabs-prev"></div>
+            <div class="national-tabs-next"></div>
+          </div>
+          <div
+            class="country brazil-country country_pt tab-pane fade show active"
+            id="brazilTab"
+            role="tabpanel"
+            aria-labelledby="brazil-tab"
+          >
+            <div class="container">
+              <div class="brazil-head">
+                <div class="title title__brazil">Brazilian Chapter</div>
+              </div>
+              <div class="row row-chapter">
+                <div class="col col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Ana Costa</div>
+                    <div class="country-item__desc">Finance and Strategy Vice President</div>
+                    <div class="country-item__specialty">Santander Brazil</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Grazielle Parenti</div>
+                    <div class="country-item__desc">
+                      Chairperson of the Brazilian Chapter of the Alliance, Latam Head Business & Sustainability
+                    </div>
+                    <div class="country-item__specialty">Syngenta</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/Andrea_Almeida.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Andrea Marques de Almeida</div>
+                    <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
+                    <div class="country-item__specialty">Petrobras</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/Tania_Reis.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Tania Reis</div>
+                    <div class="country-item__desc">CEO</div>
+                    <div class="country-item__specialty">Grupo Serpa</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Viviane Saraiva</div>
+                    <div class="country-item__desc">Chief Financial Officer</div>
+                    <div class="country-item__specialty">QGMI</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.country brazil-country -->
+          <div class="country russia-country tab-pane fade" id="russiaTab" role="tabpanel" aria-labelledby="russia-tab">
+            <div class="container">
+              <div class="brazil-head">
+                <div class="title title__brazil">Russian Chapter</div>
+              </div>
+              <div class="row row-chapter">
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/russia/Ana_Costa.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Olga Belyavtseva</div>
+                    <div class="country-item__desc">Chairperson of the Board of Directors</div>
+                    <div class="country-item__specialty">Progress</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/russia/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Anna Nesterova</div>
+                    <div class="country-item__desc">
+                      Chairperson of the Russian Chapter of the Alliance, Chairperson of the Board of Directors
+                    </div>
+                    <div class="country-item__specialty">GlobalRusTrade.com</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/russia/Andrea_Almeida.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Elena Chashchina</div>
+                    <div class="country-item__desc">Managing Partner, Co-owner</div>
+                    <div class="country-item__specialty">Group of Companies EPOTOS</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/russia/Tania_Reis.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Lyudmila Shcherbakova</div>
+                    <div class="country-item__desc">Chairperson of the Board of Directors</div>
+                    <div class="country-item__specialty">Velpharm</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/russia/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Galina Volkova</div>
+                    <div class="country-item__desc">Owner</div>
+                    <div class="country-item__specialty">Orthomoda</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.country russia-country -->
+          <div class="country india-country tab-pane fade" id="indiaTab" role="tabpanel" aria-labelledby="india-tab">
+            <div class="container">
+              <div class="brazil-head">
+                <div class="title title__brazil">Indian Chapter</div>
+              </div>
+              <div class="row row-chapter">
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/india/Ana_Costa.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Falguni Nayar</div>
+                    <div class="country-item__desc">Founder & CEO</div>
+                    <div class="country-item__specialty">Nykaa</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/india/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Sangita Reddy</div>
+                    <div class="country-item__desc">
+                      Chairperson of the Indian Chapter of the Alliance, Joint Managing Director
+                    </div>
+                    <div class="country-item__specialty">Apollo Hospitals</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/india/Andrea_Almeida.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Mallika Srinivasan</div>
+                    <div class="country-item__desc">Chief Managing Director</div>
+                    <div class="country-item__specialty">TAFE</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/india/Tania_Reis.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Pallavi Shroff</div>
+                    <div class="country-item__desc">Managing Partner</div>
+                    <div class="country-item__specialty">Shardul Amarchand Mangaldas</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/india/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Chetna Sinha</div>
+                    <div class="country-item__desc">Founder and Chairperson</div>
+                    <div class="country-item__specialty">Mann Deshi Bank</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.country india-country -->
+          <div class="country china-country tab-pane fade" id="chinaTab" role="tabpanel" aria-labelledby="china-tab">
+            <div class="container">
+              <div class="brazil-head">
+                <div class="title title__brazil">Chinese Chapter</div>
+              </div>
+              <div class="row row-chapter">
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/china/Ana_Costa.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Dong Mingzhu</div>
+                    <div class="country-item__desc">Chairperson of the Board and President</div>
+                    <div class="country-item__specialty">Gree Electric Appliance, Inc. of Zhuhai</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/china/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Zhao Haiying</div>
+                    <div class="country-item__desc">
+                      Chairperson of the Chinese Chapter of the Alliance, Executive Vice President, Chief Strategy
+                      Officer
+                    </div>
+                    <div class="country-item__specialty">China Investment Corporation (CIC)</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/china/Andrea_Almeida.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Diane Wang</div>
+                    <div class="country-item__desc">Founder and Chairperson</div>
+                    <div class="country-item__specialty">Dhgate.com</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/china/Tania_Reis.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Catherine Chen</div>
+                    <div class="country-item__desc">Corporate Senior Vice President, Director of the Board</div>
+                    <div class="country-item__specialty">Huawei</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/china/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Wen Jia</div>
+                    <div class="country-item__desc">Partner, President of Public Affairs</div>
+                    <div class="country-item__specialty">Alibaba Group</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.country china-country -->
+          <div class="country africa-country tab-pane fade" id="africaTab" role="tabpanel" aria-labelledby="africa-tab">
+            <div class="container">
+              <div class="brazil-head">
+                <div class="title title__brazil">South African Chapter</div>
+              </div>
+              <div class="row row-chapter">
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/africa/Ana_Costa.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Bertha Dlamini</div>
+                    <div class="country-item__desc">Group CEO</div>
+                    <div class="country-item__specialty">Rito Group of Companies</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/africa/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Lebogang Zulu</div>
+                    <div class="country-item__desc">Chairperson of the South African Chapter of the Alliance, CEO</div>
+                    <div class="country-item__specialty">AV Group of Companies</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/africa/Andrea_Almeida.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Ipeleng Mkhari</div>
+                    <div class="country-item__desc">Founder and CEO</div>
+                    <div class="country-item__specialty">Motseng Investment Holdings</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/africa/Tania_Reis.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">Sally Mudly-Padayachie</div>
+                    <div class="country-item__desc">Board Member</div>
+                    <div class="country-item__specialty">South African Weather Services</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="country-item">
+                    <img src="img/chapter/africa/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                    <div class="country-item__fio">PhindileNeli Spies</div>
+                    <div class="country-item__desc">Director</div>
+                    <div class="country-item__specialty">Shared Interest Investments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.country china-country -->
+        </div>
+      </div>
+    </section>
+    <!-- /.national -->
+    <section class="partners">
+      <div class="container">
+        <div class="index-title d-flex justify-content-center">PARTNERS</div>
+      </div>
+      <div class="index-wrapper-swiper">
+        <div class="index-slider-partners swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/av-light-steel-south.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/CRC.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/Epotos_logotype_page.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/ibeflogo-small.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/investindia_logo.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/logo-apollo.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/logo-en.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/ORTHOMODA.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide carousel-slide index-slide">
+              <div class="slider-item">
+                <img src="img/partners/Progress.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="slider-partners-prev swiper-button-prev"></div>
+        <div class="slider-partners-next swiper-button-next"></div>
+      </div>
+      <!-- /.index-wrapper-swiper -->
+    </section>
+    <!-- /.partners -->
+    <section class="contact-us">
+      <div class="contact-us-img-left"><img src="img/Group555.svg" alt="" /></div>
+      <div class="contact-us-img-right"><img src="img/Group555.svg" alt="" /></div>
+      <div class="container">
+        <div class="contact-us-wrapper">
+          <div class="index-title d-flex justify-content-center">Contact us</div>
+          <form action="#" class="index-form">
+            <div class="row">
+              <div class="col-12 col-sm-4 col-lg-3">
+                <label for="" class="form-contact__label">E-mail</label>
+                <input type="text" class="form-control index-from__input" />
+              </div>
+              <div class="col-12 col-sm-4 col-lg-3">
+                <label for="" class="form-contact__label">Name and surname</label>
+                <input type="text" class="form-control index-from__input" />
+              </div>
+              <div class="col-12 col-sm-4 col-lg-3">
+                <label for="" class="form-contact__label">Your message</label>
+                <input type="text" class="form-control index-from__input" />
+              </div>
+              <div class="col-12 col-sm-12 col-lg-3 form-index-btn-container">
+                <button type="submit" class="btn btn__index-form">SEND</button>
+              </div>
+            </div>
+            <div class="index-form-privacy">
+              By clicking Send, you agree to the <a href="#" class="index-form-privacy__link">Terms</a> of personal data
+              processing
+            </div>
+          </form>
+          <!-- /.index-form -->
+        </div>
+        <!-- /.contact-us-wrapper -->
+      </div>
+    </section>
+    <!-- /.contact-us -->
+    <footer class="footer">
+      <div class="container-fluid footer-container">
+        <div class="row footer-wrapper">
+          <div class="col-lg-12 col-xl-2 footer-logo-wrapp">
+            <div class="footer-logo">
+              <a href="/" class="footer-logo__link">
+                <img src="icons/footer_logo.svg" alt="logo_footer" class="footer-logo__img" />
+              </a>
+            </div>
+            <!-- /.footer-logo -->
+            <div class="footer-docs">
+              <a href="#" class="footer-docs__link mb-2">Terms of use</a>
+              <a href="#" class="footer-docs__link mb-3">Privacy Policy</a>
+            </div>
+            <!-- /.footer-docs -->
+            <div class="footer-wrapper-cap">
+              <a href="#" class="btn btn__footer-sponsors mb-3">SPONSORS</a>
+              <!-- /.btn btn__footer-sopsors -->
+              <div class="footer-cap">BRICS WBA ® 2024</div>
+            </div>
+            <!-- /.footer-cap -->
+          </div>
+          <div class="col-xl-7 col-lg-12">
+            <nav class="footer-nav">
+              <ul class="footer-menu">
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">About</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">National Chapters</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Our members</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Calendar</a>
+                </li>
+
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">News</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Projects</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Business</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Documents</a>
+                </li>
+
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Multimedia</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Contacts</a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#" class="footer-menu__link">Sponsors</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-12 col-xl-3">
+            <div class="footer-subscribe">
+              <div class="footer-subscribe__title mb-2">subscription</div>
+              <form class="form-subscribe">
+                <div class="mb-3">
+                  <input
+                    placeholder="Your e-mail"
+                    type="email"
+                    class="form-control form-subscribe__input"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input form-subscribe__chexbox" id="exampleCheck1" />
+                  <label class="form-check-label form-subscribe__label" for="exampleCheck1"
+                    >I agree to the processing of personal data</label
+                  >
+                </div>
+                <button type="submit" class="btn btn__footer-subscribe">subscribe</button>
+              </form>
+              <div class="footer-feedback">
+                <a href="tel:+74956465632 " class="footer-phone">+7 495 646 56 32 </a>
+                <a href="email:brics@globalrustrade.com" class="footer-mail">brics@globalrustrade.com</a>
+              </div>
+            </div>
+            <!-- /.footer-subscride -->
+          </div>
+        </div>
+      </div>
+      <div class="rainbow">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2 rainbow_bg-1"></div>
+            <div class="col-2 rainbow_bg-2"></div>
+            <div class="col-2 rainbow_bg-3"></div>
+            <div class="col-2 rainbow_bg-4"></div>
+            <div class="col-2 rainbow_bg-5"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </html>

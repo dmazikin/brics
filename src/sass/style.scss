@@ -1,19 +1,26 @@
-@import 'libs/bootstrap-reboot.min';
-@import 'libs/bootstrap-grid.min';
 @import "base/variables";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Open+Sans:wght@300;400&display=swap');
 @import "base/mixins";
 body {
+    position: relative;
+    z-index: -2;
     margin: 0;
     padding: 0;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.container {
-    max-width: 1140px;
+.content-wrapper {
+    position: relative;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.main-wrapper {
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -52,4 +59,29 @@ a {
 }
 
 @import "components/btn";
+@import "components/post-publish";
+@import "blocks/cards";
+@import "blocks/tags";
+@import "blocks/login";
+@import "blocks/card-info";
+@import "blocks/feature-post";
+@import "blocks/form-comment";
+@import "components/carousel";
+@import "components/title";
 @import "blocks/header";
+@import "blocks/promo";
+@import "blocks/content";
+@import "blocks/national";
+@import "blocks/calendar";
+@import "blocks/news";
+@import "blocks/sidebar";
+@import "blocks/form-search";
+@import "blocks/contacts";
+@import "blocks/sponsors";
+@import "blocks/404";
+@import "blocks/account";
+@import "blocks/about";
+@import "blocks/test";
+@import "blocks/footer";
+@import "blocks/mobile";
+@import "blocks/header-account-mobile";

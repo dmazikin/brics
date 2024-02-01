@@ -1,0 +1,124 @@
+.flags {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 69px;
+    &-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &-item {
+        width: 62px;
+        height: 44px;
+        margin-right: 44px;
+    }
+    &-img {
+        width: 100%;
+    }
+    &-desc {
+        color: #003;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.globus {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -6px;
+    left: 48%;
+    transform: translateX(-48%);
+    img {
+        width: 100%;
+    }
+}
+
+.line-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 85px;
+    margin-bottom: 35px;
+    max-width: 480px;
+    align-items: center;
+}
+
+.line {
+    width: 212px;
+    height: 1px;
+    background: #003;
+}
+
+.circle {
+    width: 9px;
+    height: 9px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.country {
+    &_pb-200 {
+        padding-bottom: 200px;
+    }
+    &-item-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__img {
+            width: 33px;
+            height: 22px;
+        }
+        .country-item__fio {
+            margin-top: 10px;
+        }
+    }
+    &-item {
+        text-align: center;
+        font-family: 'Acrom Bold', sans-serif;
+        margin-bottom: 29px;
+        &__fio {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 16px;
+            margin-bottom: 10px;
+        }
+        &__desc {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__specialty {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 900;
+        }
+        &__img {
+            border-radius: 180px;
+        }
+    }
+    &_bg-gray {
+        background: #EDEDF2;
+    }
+}
+
+.country {
+    padding-top: 83px;
+}
+
+.brazil-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 81px;
+}
+
+.row-chapter {
+    justify-content: space-around;
+}

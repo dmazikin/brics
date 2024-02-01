@@ -1,0 +1,38 @@
+.comments {
+    &-form {
+        &__textarea {
+            height: 300px;
+            padding: 13px 16px;
+            color: #082038;
+            font-family: 'Open Sans';
+            font-size: 13px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0.3;
+            border-radius: 3px;
+            border: 1px solid #626262;
+        }
+    }
+}
+
+.input-group {
+    justify-content: space-between;
+    align-items: center;
+    input {
+        font-size: 13px;
+        padding: 11px;
+    }
+    .form-check-label {
+        font-family: "Open Sans";
+        font-size: 15px;
+        margin-left: 11px;
+        margin-top: 5px;
+    }
+}
+
+.sidebar-item>.form-check-label {
+    font-size: 14px;
+    color: #253D5B;
+    margin-left: 14px;
+}

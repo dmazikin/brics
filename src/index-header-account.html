@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Меню если вошел в аккаунт</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-header-top">
+        <div class="navbar-top">
+          <div class="header-auth">
+            <div class="dropdown header-auth-dropdown">
+              <button
+                class="btn drop-btn-account dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="icons/account_circle_24px.svg" alt="" class="drop-btn-account-icon" /> Account
+              </button>
+              <ul class="dropdown-menu dropdown-menu-account">
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li><a class="dropdown-item" href="#">profile</a></li>
+                <li><a class="dropdown-item" href="#">company</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.header-auth -->
+        </div>
+        <!-- /.navbar-top -->
+      </div>
+      <!-- /.container-header-top -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
+          </a>
+          <form class="d-flex header-form-search">
+            <input class="form-control me-2 header-form-search__input" type="search" aria-label="Search" />
+            <button class="btn btn-outline-success btn__search" type="submit">
+              <img src="icons/search_head.svg" alt="search" />
+            </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="mobile-head">
+              <div class="title title__mobile-menu">MENU</div>
+              <div class="mobile-close"></div>
+              <div class="mobile-auth">
+                <div class="dropdown header-auth-dropdown-mobile">
+                  <button
+                    class="btn option-lang-eng dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="icons/lang_icon.png" alt="" class="option-lang-img" /> Eng
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Rus</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.mobile-head -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="national.html">National Chapters</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="our-members.html">Our members</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calendar.html">Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bussines.html">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Documents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="multimedia.html">Multimedia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item__last-heart" href="sponsors.html"><span>❤️</span>Sponsors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /.header -->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</html>

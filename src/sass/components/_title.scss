@@ -1,0 +1,100 @@
+.title {
+    color: #003;
+    font-family: 'Acrom Bold', sans-serif;
+    font-size: 35px;
+    margin-left: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &__comments {
+        font-size: 22px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 31px;
+    }
+    &__featured-post {
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 60px;
+        margin-bottom: 64px;
+    }
+    &__card-info {
+        font-size: 22px;
+        margin-left: 13px;
+        text-transform: uppercase;
+        margin-top: 13px;
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    &__mobile-menu {
+        display: none;
+        color: #003;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'FuturaFuturisC', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__flags {
+        margin-left: 0;
+        margin-top: 50px;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'FuturaFuturisC', sans-serif;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__brazil {
+        font-size: 33px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-left: 0;
+    }
+    &__calendar {
+        margin-left: 0;
+        margin-top: 50px;
+        text-transform: uppercase;
+    }
+    &-contact,
+    &-sponsors,
+    &__privacy,
+    &_account {
+        text-transform: uppercase;
+        margin-left: 0;
+    }
+    &-sponsors {
+        position: relative;
+        margin-bottom: 71px;
+        margin-top: 51px;
+        &::before {
+            content: '❤️ ';
+            position: absolute;
+            left: 0;
+            font-size: 30px;
+            left: -40px;
+            font-size: 30px;
+            top: 2px;
+        }
+    }
+    &__privacy,
+    &_account {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    &__card-docs {
+        font-size: 22px;
+        margin-left: 0;
+        margin-bottom: 18px;
+    }
+    &_pb-30 {
+        padding-bottom: 30px;
+    }
+    &_pt-30 {
+        padding-top: 30px;
+    }
+}

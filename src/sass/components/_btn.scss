@@ -9,10 +9,179 @@
     width: 89px;
     background: #003;
     margin-right: 22px;
+    &:hover {
+        background: #003;
+    }
     &:last-child {
         margin-right: 0;
     }
+    &:hover {
+        color: #FFF;
+    }
     &__join {
         background: #F3392C;
+    }
+    &__comments {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        width: 240px;
+        margin-top: 59px;
+        min-height: 40px;
+    }
+    &__footer-sponsors {
+        position: relative;
+        border: 1px solid #9999AD;
+        border-radius: 5px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 900;
+        text-transform: uppercase;
+        width: 133px;
+    }
+    &__footer-subscribe {
+        color: #003;
+        text-align: center;
+        font-family: 'Acrom Bold', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        border-radius: 3px;
+        background: #CCB8A0;
+        margin-top: 23px;
+        width: 100%;
+        height: 40px;
+    }
+    &__search {
+        padding: 0;
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        top: -13px;
+        left: 0px;
+        background: none;
+        border: none;
+        &:hover {
+            background: none;
+        }
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &-more {
+        display: flex;
+        justify-content: center;
+        margin-top: 79px;
+        margin-bottom: 62px;
+    }
+    &__more {
+        cursor: pointer;
+        width: 243px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 5px;
+        color: #000;
+        background: #CCB8A0;
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__search-main {
+        position: absolute;
+        right: -20px;
+        width: 130px;
+        background: #CCB8A0;
+        font-size: 14px;
+        color: #003;
+        font-weight: 700;
+        height: 40px;
+        border-top-left-radius: none;
+        border-bottom-left-radius: none;
+    }
+    &__bussiness {
+        margin-top: 17px;
+        width: 100%;
+        font-weight: 700;
+        color: #003;
+        font-size: 16px;
+        background-color: #CCB8A0;
+        filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+    }
+    &__contact-form {
+        width: 190px;
+        height: 40px;
+        text-transform: uppercase;
+    }
+    &-sponsors {
+        border-radius: 3px;
+        background: #CCB8A0;
+        color: #003;
+        text-align: center;
+        width: 200px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__privacy {
+        width: 240px;
+        height: 40px;
+        display: inline-block;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    &-user {
+        border-radius: 5px;
+        width: 100%;
+        background: #FFF;
+        color: #003;
+        min-height: 46px;
+        margin-bottom: 23px;
+        &__change {
+            border: 1px solid #CCB8A0;
+        }
+        &__delete {
+            border: 1px solid #FF574F;
+        }
+    }
+    &__docs {
+        width: 145px;
+        border-radius: 3px;
+        background: #CCB8A0;
+        color: #003;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__index {
+        width: 249px;
+    }
+    &__index-form {
+        margin-top: 21px;
+        width: 90%;
+        height: 40px;
+    }
+    &__index-form-project {
+        width: 300px;
+    }
+    &__about-download {
+        width: 243px;
+        background: #CCB8A0;
+        color: #003;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &-enter {
+        width: 100%;
     }
 }

@@ -1,0 +1,125 @@
+.card-position-top {
+    position: relative;
+}
+
+.card {
+    color: #003;
+}
+
+.card-img-top {
+    height: 290px;
+}
+
+.card-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 6px
+}
+
+.card-tag_duration {
+    position: absolute;
+    border-radius: 3px;
+    border: 1px solid #C4C4C4;
+    background: none;
+    bottom: 20px;
+    left: 20px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.card-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.card-tag-name {
+    display: inline-block;
+    margin-left: 5px;
+    font-family: "Acrom Bold", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.card-star {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-family: 'Acrom Bold', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.card-views {
+    display: flex;
+    align-items: center;
+}
+
+.card-views-count {
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-family: " Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C9C9C9;
+    padding: 10px;
+    min-height: 65px;
+}
+
+.card-body {
+    padding: 23px;
+}
+
+.card-event-date,
+.card-event-location {
+    display: flex;
+    align-items: center;
+}
+
+.date,
+.location-event {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.card-views_position {
+    justify-content: flex-end;
+}

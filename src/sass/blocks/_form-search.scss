@@ -1,0 +1,12 @@
+.search-main {
+    margin-bottom: 33px;
+    position: relative;
+    &__input {
+        height: 40px;
+    }
+    &-icon {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}

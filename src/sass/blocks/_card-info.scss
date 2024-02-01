@@ -1,0 +1,257 @@
+.card-info {
+    border-radius: 5px;
+    border: 1px solid #C9C9C9;
+    background: #FFF;
+    min-height: 300px;
+    &__img {
+        position: relative;
+        img {
+            width: 100%;
+            height: 290px;
+            object-fit: cover;
+        }
+    }
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        .title__card-info {
+            width: 100%;
+        }
+    }
+    .flags-item {
+        position: absolute;
+        bottom: 131px;
+        left: 20px;
+    }
+}
+
+.card-info-calendar {
+    display: flex;
+    justify-content: stretch;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 20px 21px;
+}
+
+.location {
+    display: flex;
+    margin-left: 34px;
+    width: 100%;
+    align-items: center;
+    &__city {
+        margin-left: 15px;
+    }
+}
+
+.circle {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #003;
+    border-radius: 50%;
+}
+
+.project-check {
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-style: italic;
+    &-completed {
+        padding-left: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            background-image: url('../../icons/completed.svg');
+            background-repeat: no-repeat;
+            width: 9px;
+            height: 9px;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    &-ongoing {
+        padding-left: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 6px;
+            background-image: url('../../icons/Ellipse243.svg');
+            background-repeat: no-repeat;
+            width: 9px;
+            height: 9px;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    &-supp {
+        padding-left: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 6px;
+            background-image: url('../../icons/Ellipse243.svg');
+            background-repeat: no-repeat;
+            width: 9px;
+            height: 9px;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    &-under {
+        padding-left: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 6px;
+            background-image: url('../../icons/Ellipse238.svg');
+            background-repeat: no-repeat;
+            width: 9px;
+            height: 9px;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    &-proposed {
+        padding-left: 10px;
+    }
+    &-circle {
+        width: 22px;
+        height: 22px;
+        border: 1px solid #003;
+        border-radius: 50%;
+    }
+}
+
+.card-company {
+    min-height: 370px;
+    border-radius: 5px;
+    border: 1px solid #C9C9C9;
+    &-left {
+        border-right: 1px solid #C9C9C9;
+        min-height: 370px;
+        &__top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: #EDEDF2;
+            border-bottom: 1px solid #C9C9C9;
+        }
+        &__title {
+            margin-left: 15px;
+            color: #003;
+            font-family: "Acrom", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    &-right {
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px;
+            border-bottom: 1px solid #C9C9C9;
+        }
+        &__title {
+            color: #003;
+            font-family: "Acrom", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    &-content {
+        padding: 15px;
+        &__img {
+            width: 220px;
+            padding-top: 63px;
+        }
+        &__status {
+            padding-top: 23px;
+            color: #A08768;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 400;
+        }
+        &__location {
+            margin-top: 43px;
+        }
+        &__location,
+        &__profile,
+        &__country {
+            display: flex;
+            margin-bottom: 42px;
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.left {
+    padding-right: 0;
+}
+
+.right {
+    padding-left: 0;
+}
+
+.video-time {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #C4C4C4;
+    position: absolute;
+    bottom: 140px;
+    left: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.card-info>.video-play {
+    top: 30vh;
+}
+
+.card-info>.video-time {
+    bottom: 190px;
+}
+
+.card-docs {
+    border-radius: 5px;
+    border: 1px solid #C9C9C9;
+    background: #FFF;
+    min-height: 279px;
+    padding: 30px 130px 40px 40px;
+    &__desc {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 24px;
+    }
+}
+
+.card-docs-left {
+    position: relative;
+    &__img {
+        width: 100%;
+    }
+}
+
+.docs-markbook {
+    position: absolute;
+    top: -21px;
+    right: 35px;
+}
