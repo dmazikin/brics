@@ -203,6 +203,62 @@
     background: #ededf2;
 }
 
+.timeline-title-2020 {
+    margin-left: 0;
+    position: absolute;
+    background: #fff;
+    top: -23px;
+    right: 37%;
+    transform: translateX(-37%);
+    width: 200px;
+    text-align: center;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        top: 17px;
+        border-radius: 100%;
+        background: #CCB8A0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        width: 10px;
+        height: 10px;
+        top: 17px;
+        border-radius: 100%;
+        background: #CCB8A0;
+    }
+}
+
+.timeline-list-type-2 {
+    position: relative;
+    border-top: 1px solid #CCB8A0;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        top: -6px;
+        border-radius: 100%;
+        background: #CCB8A0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        width: 10px;
+        height: 10px;
+        top: -6px;
+        border-radius: 100%;
+        background: #CCB8A0;
+    }
+}
+
 .timeline-item {
     position: relative;
 }
