@@ -141,6 +141,132 @@
     }
 }
 
+.head-about {
+    .about-title {
+        margin-bottom: 0;
+    }
+}
+
+.timeline {
+    padding-top: 80px;
+}
+
+.timeline-item-subtitle {
+    color: #003;
+    font-family: "Acrom Bold", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #CCB8A0;
+}
+
+.timeline-item-content {
+    padding: 18px;
+    color: #003;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.timeline-item-subtitle_border-top {
+    border-top: 1px solid #CCB8A0;
+}
+
+.timeline-item-wrapper {
+    margin-top: 65px;
+    border-radius: 5px;
+    border: 1px solid #CCB8A0;
+}
+
+.timeline-list-type {
+    position: relative;
+    &::before {
+        content: '';
+        top: 20px;
+        position: absolute;
+        border-top: 1px solid #CCB8A0;
+        width: 100%;
+    }
+}
+
+.timeline-title-2017,
+.timeline-title-2018,
+.timeline-title-2019 {
+    margin-left: 0;
+    position: absolute;
+    background: #ededf2;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-title-2017 {
+    right: 190px;
+    width: 340px;
+    text-align: right;
+    padding-right: 20px;
+    &::after {
+        content: '';
+        position: absolute;
+        right: -1px;
+        width: 10px;
+        height: 10px;
+        top: 15px;
+        border-radius: 100%;
+        background: #CCB8A0;
+    }
+}
+
+.timeline-title-2018 {
+    right: 120px;
+    width: 220px;
+    text-align: center;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        top: 15px;
+        border-radius: 100%;
+        background: #CCB8A0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: -1px;
+        width: 10px;
+        height: 10px;
+        top: 15px;
+        border-radius: 100%;
+        background: #CCB8A0;
+    }
+}
+
+.timeline-title-2019 {
+    right: 10px;
+    width: 300px;
+    text-align: left;
+    padding-left: 20px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        top: 15px;
+        border-radius: 100%;
+        background: #CCB8A0;
+    }
+}
+
 .body-img {
     position: absolute;
     right: 0;
