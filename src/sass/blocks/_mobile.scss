@@ -838,6 +838,77 @@
         width: 0;
         height: 0;
     }
+    .structure-item {
+        margin-bottom: 45px;
+    }
+    .structure-item {
+        background: none;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 40px;
+            width: 10px;
+            height: 10px;
+            top: 43px;
+            border-radius: 100%;
+            background: #CCB8A0;
+        }
+        &::after {
+            right: 40px;
+            top: 43px;
+        }
+    }
+    .structure-item-type-3 {
+        &::after {
+            content: '';
+            position: absolute;
+            right: 40px;
+            top: 42px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: #CCB8A0;
+        }
+    }
+    .structure-list {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            border: none;
+            border-left: 2px solid #CCB8A0;
+            height: 67%;
+            left: 18px;
+            top: 47px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            border: none;
+            border-right: 2px solid #CCB8A0;
+            height: 67%;
+            right: 18px;
+            top: 47px;
+        }
+    }
+    .item-mobile-border {
+        &::before {
+            content: '';
+            position: absolute;
+            border-top: 2px solid #CCB8A0;
+            top: 47px;
+            left: 18px;
+            width: 30px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            border-top: 2px solid #CCB8A0;
+            top: 47px;
+            right: 18px;
+            width: 30px;
+        }
+    }
     .nav-news {
         width: 100%;
         padding-bottom: 28px;
@@ -1027,13 +1098,6 @@
     }
     .structure-item {
         margin-bottom: 25px;
-    }
-    .structure-item:nth-of-type(1)::after,
-    .structure-item:nth-of-type(2)::before,
-    .structure-item:nth-of-type(2)::after,
-    .structure-item:nth-of-type(3)::before {
-        width: 0;
-        height: 0;
     }
     .left {
         padding-right: 11px;
