@@ -13,7 +13,13 @@
   <body>
     <header class="header">
       <div class="container-header-top">
-        <div class="navbar-top">
+        <div class="container d-flex justify-content-between">
+          <form class="d-flex header-search">
+            <input class="form-control me-2 header-search__input" type="search" aria-label="Search" />
+            <button class="btn btn-outline-success btn__search" type="submit">
+              <img src="icons/search_head.svg" alt="search" />
+            </button>
+          </form>
           <div class="header-auth">
             <a href="#" class="btn btn__join">Join</a>
             <a href="#" class="header-auth__login btn mobile_hidden_auth">Log In</a>
@@ -36,17 +42,8 @@
         <!-- /.navbar-top -->
       </div>
       <!-- /.container-header-top -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
-          </a>
-          <form class="d-flex header-form-search">
-            <input class="form-control me-2 header-form-search__input" type="search" aria-label="Search" />
-            <button class="btn btn-outline-success btn__search" type="submit">
-              <img src="icons/search_head.svg" alt="search" />
-            </button>
-          </form>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-test">
+        <div class="container container-mobile">
           <button
             class="navbar-toggler"
             type="button"
@@ -58,6 +55,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <a class="navbar-brand" href="/">
+            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
+          </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="mobile-head">
               <div class="title title__mobile-menu">MENU</div>
@@ -80,39 +80,102 @@
               </div>
             </div>
             <!-- /.mobile-head -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-test">
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Who we are
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">National Chapters </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Our members</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Our partners</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="national.html">National Chapters</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  What we do
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="about.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Documents</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Courses</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="our-members.html">Our members</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Events and News
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="multimedia.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Calendar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Multimedia</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="calendar.html">Calendar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="project.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="bussines.html">Business</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Documents</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="multimedia.html">Multimedia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-item__last-heart" href="sponsors.html"><span>❤️</span>Sponsors</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact us
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="multimedia.html">Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Business</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -120,343 +183,346 @@
       </nav>
     </header>
     <!-- /.header -->
-    <div class="flags">
-      <div class="container flags-conatiner">
-        <div class="row">
-          <div class="col-12 col-lg-6 col-xl-6 flags-wrapper">
-            <div class="flags-item">
-              <img src="img/flags/brazil.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/russia.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/india.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/china.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/africa.png" alt="" class="flags-img" />
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-6 flags-wrapper">
-            <div class="flags-item">
-              <img src="img/flags/brazil.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/russia.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/india.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/china.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/africa.png" alt="" class="flags-img" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="globus">
-        <img src="icons/globus.svg" alt="" />
-      </div>
-      <div class="title title__flags">
-        <span class="title_left_small">National</span>
-        <span class="title_rigth_small">Chapters</span> of the Alliance
-      </div>
-      <div class="line-box">
-        <div class="line"></div>
-        <div class="circle"></div>
-        <div class="line"></div>
-      </div>
-      <!-- /.line-box -->
-      <div class="flags-desc">
-        Representatives per each BRICS country, who have founded their own businesses or are CEOs of large entterprises,
-        have overcome the main barriers and currently aim at entering international markets
-      </div>
-      <!-- /.flags-desc -->
-    </div>
-    <!-- /.flags -->
-    <div class="country brazil-country country_pt">
-      <div class="container">
-        <div class="brazil-head">
-          <img src="img/flags/brazil.png" alt="" class="brazil-country__img" />
-          <div class="title title__brazil">Brazilian Chapter</div>
-        </div>
-        <div class="row row-chapter">
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Ana Costa</div>
-              <div class="country-item__desc">Finance and Strategy Vice President</div>
-              <div class="country-item__specialty">Santander Brazil</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Grazielle_Parenti.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Grazielle Parenti</div>
-              <div class="country-item__desc">
-                Chairperson of the Brazilian Chapter of the Alliance, Latam Head Business & Sustainability
+    <div class="body-page">
+      <div class="flags">
+        <div class="container flags-conatiner">
+          <div class="row">
+            <div class="col-12 col-lg-6 col-xl-6 flags-wrapper">
+              <div class="flags-item">
+                <img src="img/flags/brazil.png" alt="" class="flags-img" />
               </div>
-              <div class="country-item__specialty">Syngenta</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Andrea Marques de Almeida</div>
-              <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
-              <div class="country-item__specialty">Petrobras</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Tania_Reis.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Tania Reis</div>
-              <div class="country-item__desc">CEO</div>
-              <div class="country-item__specialty">Grupo Serpa</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Viviane_Saraiva.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Viviane Saraiva</div>
-              <div class="country-item__desc">Chief Financial Officer</div>
-              <div class="country-item__specialty">QGMI</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-xl-12 btn-more">
-            <button class="btn btn__more">Learn more</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.country brazil-country -->
-    <div class="country russia-country country_bg-gray">
-      <div class="container">
-        <div class="brazil-head">
-          <img src="img/flags/russia.png" alt="" class="brazil-country__img" />
-          <div class="title title__brazil">Russian Chapter</div>
-        </div>
-        <div class="row row-chapter">
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/russia/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Olga Belyavtseva</div>
-              <div class="country-item__desc">Chairperson of the Board of Directors</div>
-              <div class="country-item__specialty">Progress</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/russia/Grazielle_Parenti.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Anna Nesterova</div>
-              <div class="country-item__desc">
-                Chairperson of the Russian Chapter of the Alliance, Chairperson of the Board of Directors
+              <div class="flags-item">
+                <img src="img/flags/russia.png" alt="" class="flags-img" />
               </div>
-              <div class="country-item__specialty">GlobalRusTrade.com</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/russia/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Elena Chashchina</div>
-              <div class="country-item__desc">Managing Partner, Co-owner</div>
-              <div class="country-item__specialty">Group of Companies EPOTOS</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/russia/Tania_Reis.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Lyudmila Shcherbakova</div>
-              <div class="country-item__desc">Chairperson of the Board of Directors</div>
-              <div class="country-item__specialty">Velpharm</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/russia/Viviane_Saraiva.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Galina Volkova</div>
-              <div class="country-item__desc">Owner</div>
-              <div class="country-item__specialty">Orthomoda</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-xl-12 btn-more">
-            <button class="btn btn__more">Learn more</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.country russia-country -->
-    <div class="country india-country">
-      <div class="container">
-        <div class="brazil-head">
-          <img src="img/flags/india.png" alt="" class="brazil-country__img" />
-          <div class="title title__brazil">Indian Chapter</div>
-        </div>
-        <div class="row row-chapter">
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/india/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Falguni Nayar</div>
-              <div class="country-item__desc">Founder & CEO</div>
-              <div class="country-item__specialty">Nykaa</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/india/Grazielle_Parenti.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Sangita Reddy</div>
-              <div class="country-item__desc">
-                Chairperson of the Indian Chapter of the Alliance, Joint Managing Director
+              <div class="flags-item">
+                <img src="img/flags/india.png" alt="" class="flags-img" />
               </div>
-              <div class="country-item__specialty">Apollo Hospitals</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/india/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Mallika Srinivasan</div>
-              <div class="country-item__desc">Chief Managing Director</div>
-              <div class="country-item__specialty">TAFE</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/india/Tania_Reis.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Pallavi Shroff</div>
-              <div class="country-item__desc">Managing Partner</div>
-              <div class="country-item__specialty">Shardul Amarchand Mangaldas</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/india/Viviane_Saraiva.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Chetna Sinha</div>
-              <div class="country-item__desc">Founder and Chairperson</div>
-              <div class="country-item__specialty">Mann Deshi Bank</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-xl-12 btn-more">
-            <button class="btn btn__more">Learn more</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.country india-country -->
-    <div class="country china-country country_bg-gray">
-      <div class="container">
-        <div class="brazil-head">
-          <img src="img/flags/china.png" alt="" class="brazil-country__img" />
-          <div class="title title__brazil">Chinese Chapter</div>
-        </div>
-        <div class="row row-chapter">
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/china/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Dong Mingzhu</div>
-              <div class="country-item__desc">Chairperson of the Board and President</div>
-              <div class="country-item__specialty">Gree Electric Appliance, Inc. of Zhuhai</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/china/Grazielle_Parenti.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Zhao Haiying</div>
-              <div class="country-item__desc">
-                Chairperson of the Chinese Chapter of the Alliance, Executive Vice President, Chief Strategy Officer
+              <div class="flags-item">
+                <img src="img/flags/china.png" alt="" class="flags-img" />
               </div>
-              <div class="country-item__specialty">China Investment Corporation (CIC)</div>
+              <div class="flags-item">
+                <img src="img/flags/africa.png" alt="" class="flags-img" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-6 flags-wrapper">
+              <div class="flags-item">
+                <img src="img/flags/brazil.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/russia.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/india.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/china.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/africa.png" alt="" class="flags-img" />
+              </div>
             </div>
           </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/china/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Diane Wang</div>
-              <div class="country-item__desc">Founder and Chairperson</div>
-              <div class="country-item__specialty">Dhgate.com</div>
-            </div>
+        </div>
+        <div class="globus">
+          <img src="icons/globus.svg" alt="" />
+        </div>
+        <div class="title title__flags">
+          <span class="title_left_small">National</span>
+          <span class="title_rigth_small">Chapters</span> of the Alliance
+        </div>
+        <div class="line-box">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <!-- /.line-box -->
+        <div class="flags-desc">
+          Representatives per each BRICS country, who have founded their own businesses or are CEOs of large
+          entterprises, have overcome the main barriers and currently aim at entering international markets
+        </div>
+        <!-- /.flags-desc -->
+      </div>
+      <!-- /.flags -->
+      <div class="country brazil-country country_pt">
+        <div class="container">
+          <div class="brazil-head">
+            <img src="img/flags/brazil.png" alt="" class="brazil-country__img" />
+            <div class="title title__brazil">Brazilian Chapter</div>
           </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/china/Tania_Reis.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Catherine Chen</div>
-              <div class="country-item__desc">Corporate Senior Vice President, Director of the Board</div>
-              <div class="country-item__specialty">Huawei</div>
+          <div class="row row-chapter">
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Ana Costa</div>
+                <div class="country-item__desc">Finance and Strategy Vice President</div>
+                <div class="country-item__specialty">Santander Brazil</div>
+              </div>
             </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/china/Viviane_Saraiva.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Wen Jia</div>
-              <div class="country-item__desc">Partner, President of Public Affairs</div>
-              <div class="country-item__specialty">Alibaba Group</div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Grazielle Parenti</div>
+                <div class="country-item__desc">
+                  Chairperson of the Brazilian Chapter of the Alliance, Latam Head Business & Sustainability
+                </div>
+                <div class="country-item__specialty">Syngenta</div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-xl-12 btn-more">
-            <button class="btn btn__more">Learn more</button>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Andrea Marques de Almeida</div>
+                <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
+                <div class="country-item__specialty">Petrobras</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Tania_Reis.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Tania Reis</div>
+                <div class="country-item__desc">CEO</div>
+                <div class="country-item__specialty">Grupo Serpa</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Viviane Saraiva</div>
+                <div class="country-item__desc">Chief Financial Officer</div>
+                <div class="country-item__specialty">QGMI</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-xl-12 btn-more">
+              <button class="btn btn__more">Learn more</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- /.country china-country -->
-    <div class="country africa-country">
-      <div class="container">
-        <div class="brazil-head">
-          <img src="img/flags/africa.png" alt="" class="brazil-country__img" />
-          <div class="title title__brazil">South African Chapter</div>
-        </div>
-        <div class="row row-chapter">
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/africa/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Bertha Dlamini</div>
-              <div class="country-item__desc">Group CEO</div>
-              <div class="country-item__specialty">Rito Group of Companies</div>
-            </div>
+      <!-- /.country brazil-country -->
+      <div class="country russia-country country_bg-gray">
+        <div class="container">
+          <div class="brazil-head">
+            <img src="img/flags/russia.png" alt="" class="brazil-country__img" />
+            <div class="title title__brazil">Russian Chapter</div>
           </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/africa/Grazielle_Parenti.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Lebogang Zulu</div>
-              <div class="country-item__desc">Chairperson of the South African Chapter of the Alliance, CEO</div>
-              <div class="country-item__specialty">AV Group of Companies</div>
+          <div class="row row-chapter">
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/russia/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Olga Belyavtseva</div>
+                <div class="country-item__desc">Chairperson of the Board of Directors</div>
+                <div class="country-item__specialty">Progress</div>
+              </div>
             </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/africa/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Ipeleng Mkhari</div>
-              <div class="country-item__desc">Founder and CEO</div>
-              <div class="country-item__specialty">Motseng Investment Holdings</div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/russia/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Anna Nesterova</div>
+                <div class="country-item__desc">
+                  Chairperson of the Russian Chapter of the Alliance, Chairperson of the Board of Directors
+                </div>
+                <div class="country-item__specialty">GlobalRusTrade.com</div>
+              </div>
             </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/africa/Tania_Reis.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">Sally Mudly-Padayachie</div>
-              <div class="country-item__desc">Board Member</div>
-              <div class="country-item__specialty">South African Weather Services</div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/russia/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Elena Chashchina</div>
+                <div class="country-item__desc">Managing Partner, Co-owner</div>
+                <div class="country-item__specialty">Group of Companies EPOTOS</div>
+              </div>
             </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/africa/Viviane_Saraiva.png" alt="" class="country-item__img" />
-              <div class="country-item__fio">PhindileNeli Spies</div>
-              <div class="country-item__desc">Director</div>
-              <div class="country-item__specialty">Shared Interest Investments</div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/russia/Tania_Reis.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Lyudmila Shcherbakova</div>
+                <div class="country-item__desc">Chairperson of the Board of Directors</div>
+                <div class="country-item__specialty">Velpharm</div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-xl-12 btn-more">
-            <button class="btn btn__more">Learn more</button>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/russia/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Galina Volkova</div>
+                <div class="country-item__desc">Owner</div>
+                <div class="country-item__specialty">Orthomoda</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-xl-12 btn-more">
+              <button class="btn btn__more">Learn more</button>
+            </div>
           </div>
         </div>
       </div>
+      <!-- /.country russia-country -->
+      <div class="country india-country">
+        <div class="container">
+          <div class="brazil-head">
+            <img src="img/flags/india.png" alt="" class="brazil-country__img" />
+            <div class="title title__brazil">Indian Chapter</div>
+          </div>
+          <div class="row row-chapter">
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/india/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Falguni Nayar</div>
+                <div class="country-item__desc">Founder & CEO</div>
+                <div class="country-item__specialty">Nykaa</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/india/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Sangita Reddy</div>
+                <div class="country-item__desc">
+                  Chairperson of the Indian Chapter of the Alliance, Joint Managing Director
+                </div>
+                <div class="country-item__specialty">Apollo Hospitals</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/india/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Mallika Srinivasan</div>
+                <div class="country-item__desc">Chief Managing Director</div>
+                <div class="country-item__specialty">TAFE</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/india/Tania_Reis.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Pallavi Shroff</div>
+                <div class="country-item__desc">Managing Partner</div>
+                <div class="country-item__specialty">Shardul Amarchand Mangaldas</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/india/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Chetna Sinha</div>
+                <div class="country-item__desc">Founder and Chairperson</div>
+                <div class="country-item__specialty">Mann Deshi Bank</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-xl-12 btn-more">
+              <button class="btn btn__more">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.country india-country -->
+      <div class="country china-country country_bg-gray">
+        <div class="container">
+          <div class="brazil-head">
+            <img src="img/flags/china.png" alt="" class="brazil-country__img" />
+            <div class="title title__brazil">Chinese Chapter</div>
+          </div>
+          <div class="row row-chapter">
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/china/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Dong Mingzhu</div>
+                <div class="country-item__desc">Chairperson of the Board and President</div>
+                <div class="country-item__specialty">Gree Electric Appliance, Inc. of Zhuhai</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/china/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Zhao Haiying</div>
+                <div class="country-item__desc">
+                  Chairperson of the Chinese Chapter of the Alliance, Executive Vice President, Chief Strategy Officer
+                </div>
+                <div class="country-item__specialty">China Investment Corporation (CIC)</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/china/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Diane Wang</div>
+                <div class="country-item__desc">Founder and Chairperson</div>
+                <div class="country-item__specialty">Dhgate.com</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/china/Tania_Reis.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Catherine Chen</div>
+                <div class="country-item__desc">Corporate Senior Vice President, Director of the Board</div>
+                <div class="country-item__specialty">Huawei</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/china/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Wen Jia</div>
+                <div class="country-item__desc">Partner, President of Public Affairs</div>
+                <div class="country-item__specialty">Alibaba Group</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-xl-12 btn-more">
+              <button class="btn btn__more">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.country china-country -->
+      <div class="country africa-country">
+        <div class="container">
+          <div class="brazil-head">
+            <img src="img/flags/africa.png" alt="" class="brazil-country__img" />
+            <div class="title title__brazil">South African Chapter</div>
+          </div>
+          <div class="row row-chapter">
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/africa/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Bertha Dlamini</div>
+                <div class="country-item__desc">Group CEO</div>
+                <div class="country-item__specialty">Rito Group of Companies</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/africa/Grazielle_Parenti.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Lebogang Zulu</div>
+                <div class="country-item__desc">Chairperson of the South African Chapter of the Alliance, CEO</div>
+                <div class="country-item__specialty">AV Group of Companies</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/africa/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Ipeleng Mkhari</div>
+                <div class="country-item__desc">Founder and CEO</div>
+                <div class="country-item__specialty">Motseng Investment Holdings</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/africa/Tania_Reis.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">Sally Mudly-Padayachie</div>
+                <div class="country-item__desc">Board Member</div>
+                <div class="country-item__specialty">South African Weather Services</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/africa/Viviane_Saraiva.png" alt="" class="country-item__img" />
+                <div class="country-item__fio">PhindileNeli Spies</div>
+                <div class="country-item__desc">Director</div>
+                <div class="country-item__specialty">Shared Interest Investments</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-xl-12 btn-more">
+              <button class="btn btn__more">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.country china-country -->
     </div>
-    <!-- /.country china-country -->
+    <!-- /.body-page -->
     <footer class="footer">
       <div class="container-fluid footer-container">
         <div class="row footer-wrapper">

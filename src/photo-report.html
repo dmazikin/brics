@@ -15,7 +15,13 @@
   <body>
     <header class="header">
       <div class="container-header-top">
-        <div class="navbar-top">
+        <div class="container d-flex justify-content-between">
+          <form class="d-flex header-search">
+            <input class="form-control me-2 header-search__input" type="search" aria-label="Search" />
+            <button class="btn btn-outline-success btn__search" type="submit">
+              <img src="icons/search_head.svg" alt="search" />
+            </button>
+          </form>
           <div class="header-auth">
             <a href="#" class="btn btn__join">Join</a>
             <a href="#" class="header-auth__login btn mobile_hidden_auth">Log In</a>
@@ -38,17 +44,8 @@
         <!-- /.navbar-top -->
       </div>
       <!-- /.container-header-top -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
-          </a>
-          <form class="d-flex header-form-search">
-            <input class="form-control me-2 header-form-search__input" type="search" aria-label="Search" />
-            <button class="btn btn-outline-success btn__search" type="submit">
-              <img src="icons/search_head.svg" alt="search" />
-            </button>
-          </form>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-test">
+        <div class="container container-mobile">
           <button
             class="navbar-toggler"
             type="button"
@@ -60,6 +57,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <a class="navbar-brand" href="/">
+            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
+          </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="mobile-head">
               <div class="title title__mobile-menu">MENU</div>
@@ -82,39 +82,102 @@
               </div>
             </div>
             <!-- /.mobile-head -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-test">
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Who we are
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">National Chapters </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Our members</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Our partners</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="national.html">National Chapters</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  What we do
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="about.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Documents</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Courses</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="our-members.html">Our members</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Events and News
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="multimedia.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Calendar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Multimedia</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="calendar.html">Calendar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="project.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="bussines.html">Business</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Documents</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="multimedia.html">Multimedia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-item__last-heart" href="sponsors.html"><span>❤️</span>Sponsors</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact us
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="multimedia.html">Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Business</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -122,327 +185,330 @@
       </nav>
     </header>
     <!-- /.header -->
-    <section class="promo">
-      <img src="img/photo-report/image155.png" alt="" class="promo__img-blur" />
-      <div class="promo-preview">
-        <img src="img/photo-report/image154.png" alt="" class="promo-preview__img" />
-      </div>
-    </section>
-    <div class="content-wrapper">
-      <div class="content-article">
-        <div class="container">
-          <div class="title-head">
-            <img src="icons/star.svg" alt="" class="title-head__icon" />
-            <h1 class="title">BASS CULTURE of the BRICS WBA</h1>
-          </div>
-          <div class="post-publish">
-            <div class="post-publish__dates">
-              <div class="post-publish__icon">
-                <img src="icons/calendar_icon.svg" alt="calendar" class="post-publish__img" />
+    <div class="body-page">
+      <section class="promo">
+        <img src="img/photo-report/image155.png" alt="" class="promo__img-blur" />
+        <div class="promo-preview">
+          <img src="img/photo-report/image154.png" alt="" class="promo-preview__img" />
+        </div>
+      </section>
+      <div class="content-wrapper">
+        <div class="content-article">
+          <div class="container">
+            <div class="title-head">
+              <img src="icons/star.svg" alt="" class="title-head__icon" />
+              <h1 class="title">BASS CULTURE of the BRICS WBA</h1>
+            </div>
+            <div class="post-publish">
+              <div class="post-publish__dates">
+                <div class="post-publish__icon">
+                  <img src="icons/calendar_icon.svg" alt="calendar" class="post-publish__img" />
+                </div>
+                <div class="post-publish__date col-2">9 May 2022</div>
+                <div class="location">
+                  <img src="icons/location.svg" alt="" class="location__img" />
+                  <div class="location__city">Cape Town, South Africa</div>
+                </div>
               </div>
-              <div class="post-publish__date col-2">9 May 2022</div>
-              <div class="location">
-                <img src="icons/location.svg" alt="" class="location__img" />
-                <div class="location__city">Cape Town, South Africa</div>
+              <div class="views">
+                <div class="view">
+                  <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                  <div class="view__count">308</div>
+                </div>
               </div>
             </div>
-            <div class="views">
-              <div class="view">
-                <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
-                <div class="view__count">308</div>
+            <!-- /.post-publish -->
+            <div class="gallery-wrapper">
+              <div class="row">
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                  <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
+                    <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
+                  </a>
+                </div>
               </div>
+              <!-- /.row -->
             </div>
-          </div>
-          <!-- /.post-publish -->
-          <div class="gallery-wrapper">
+            <!-- /.gallery-wrapper -->
             <div class="row">
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-              <div class="col-12 col-lg-3 col-xl-3">
-                <a href="img/photo-report/image177.png" class="gallery-link" data-fancybox="gallery">
-                  <img src="img/photo-report/image167.png" alt="" class="gallery-img" />
-                </a>
-              </div>
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.gallery-wrapper -->
-          <div class="row">
-            <div class="col-12 col-lg-10 col-xl-10 mb-3 photo-card-row">
-              <div class="card-info card-calendar">
-                <div class="card-info__img">
-                  <img src="img/news/image_153.png" alt="featured" />
-                </div>
-                <div class="card-info-title">
-                  <div class="title title__card-info">BRICS Business Forum 2019</div>
-                </div>
-                <!-- /.card-title -->
-                <div class="post-publish card-info-calendar">
-                  <div class="post-publish__dates">
-                    <div class="post-publish__icon">
-                      <img
-                        src="icons/calendar_icon.svg"
-                        alt="calendar"
-                        class="post-publish__img card-info-calendar__img"
-                      />
+              <div class="col-12 col-lg-10 col-xl-10 mb-3 photo-card-row">
+                <div class="card-info card-calendar">
+                  <div class="card-info__img">
+                    <img src="img/news/image_153.png" alt="featured" />
+                  </div>
+                  <div class="card-info-title">
+                    <div class="title title__card-info">BRICS Business Forum 2019</div>
+                  </div>
+                  <!-- /.card-title -->
+                  <div class="post-publish card-info-calendar">
+                    <div class="post-publish__dates">
+                      <div class="post-publish__icon">
+                        <img
+                          src="icons/calendar_icon.svg"
+                          alt="calendar"
+                          class="post-publish__img card-info-calendar__img"
+                        />
+                      </div>
+                      <div class="post-publish__date card-info-calendar__date">21.12.21</div>
                     </div>
-                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
-                  </div>
-                  <div class="location">
-                    <img src="icons/location.svg" alt="" class="location__img" />
-                    <div class="location__city">Brazil, Rio-De-janeiro</div>
-                  </div>
-                  <div class="views">
-                    <div class="view">
-                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
-                      <div class="view__count">308</div>
+                    <div class="location">
+                      <img src="icons/location.svg" alt="" class="location__img" />
+                      <div class="location__city">Brazil, Rio-De-janeiro</div>
+                    </div>
+                    <div class="views">
+                      <div class="view">
+                        <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                        <div class="view__count">308</div>
+                      </div>
                     </div>
                   </div>
+                  <!-- /.card-info__date -->
                 </div>
-                <!-- /.card-info__date -->
               </div>
+              <!-- /.col-12 col-xl-6 -->
             </div>
-            <!-- /.col-12 col-xl-6 -->
+            <div class="like-btn">
+              <img src="icons/like_icon.svg" alt="" />
+              <div class="like-btn__text">I like it!</div>
+            </div>
+            <!-- /.like-btn -->
           </div>
-          <div class="like-btn">
-            <img src="icons/like_icon.svg" alt="" />
-            <div class="like-btn__text">I like it!</div>
-          </div>
-          <!-- /.like-btn -->
         </div>
+        <!-- /.content-article -->
       </div>
-      <!-- /.content-article -->
+      <!-- /.content-wrapper -->
+      <section class="featured-post">
+        <div class="title title__featured-post">you may also like this</div>
+        <div class="featured-slider swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide featured-slide">
+              <div class="container">
+                <div class="card-info featured-card">
+                  <div class="card-info__img">
+                    <img src="img/featured.png" alt="featured" />
+                  </div>
+                  <div class="featured-card__tag">
+                    <img src="icons/arcticle.svg" alt="arcticle" />
+                    <span>ARTICLE</span>
+                  </div>
+                  <div class="featured-card__select">
+                    <img src="icons/star_featured.svg" alt="" />
+                  </div>
+                  <!-- /.featured-card__select -->
+                  <div class="title title__card-info">Home to the very best of creativity</div>
+                  <div class="post-publish card-info-calendar">
+                    <div class="post-publish__dates">
+                      <div class="post-publish__icon">
+                        <img
+                          src="icons/calendar_icon.svg"
+                          alt="calendar"
+                          class="post-publish__img card-info-calendar__img"
+                        />
+                      </div>
+                      <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                    </div>
+                    <div class="views">
+                      <div class="view">
+                        <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                        <div class="view__count">308</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-info__date -->
+                </div>
+                <!-- /.card-info featured-card -->
+              </div>
+            </div>
+            <div class="swiper-slide featured-slide">
+              <div class="container">
+                <div class="card-info featured-card">
+                  <div class="card-info__img">
+                    <img src="img/featured.png" alt="featured" />
+                  </div>
+                  <div class="featured-card__tag">
+                    <img src="icons/arcticle.svg" alt="arcticle" />
+                    <span>ARTICLE</span>
+                  </div>
+                  <div class="featured-card__select">
+                    <img src="icons/star_featured.svg" alt="" />
+                  </div>
+                  <!-- /.featured-card__select -->
+                  <div class="title title__card-info">Home to the very best of creativity</div>
+                  <div class="post-publish card-info-calendar">
+                    <div class="post-publish__dates">
+                      <div class="post-publish__icon">
+                        <img
+                          src="icons/calendar_icon.svg"
+                          alt="calendar"
+                          class="post-publish__img card-info-calendar__img"
+                        />
+                      </div>
+                      <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                    </div>
+                    <div class="views">
+                      <div class="view">
+                        <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                        <div class="view__count">308</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-info__date -->
+                </div>
+                <!-- /.card-info featured-card -->
+              </div>
+            </div>
+            <div class="swiper-slide featured-slide">
+              <div class="container">
+                <div class="card-info featured-card">
+                  <div class="card-info__img">
+                    <img src="img/featured.png" alt="featured" />
+                  </div>
+                  <div class="featured-card__tag">
+                    <img src="icons/arcticle.svg" alt="arcticle" />
+                    <span>ARTICLE</span>
+                  </div>
+                  <div class="featured-card__select">
+                    <img src="icons/star_featured.svg" alt="" />
+                  </div>
+                  <!-- /.featured-card__select -->
+                  <div class="title title__card-info">Home to the very best of creativity</div>
+                  <div class="post-publish card-info-calendar">
+                    <div class="post-publish__dates">
+                      <div class="post-publish__icon">
+                        <img
+                          src="icons/calendar_icon.svg"
+                          alt="calendar"
+                          class="post-publish__img card-info-calendar__img"
+                        />
+                      </div>
+                      <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                    </div>
+                    <div class="views">
+                      <div class="view">
+                        <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                        <div class="view__count">308</div>
+                      </div>
+                      <div class="view-like">
+                        <img src="icons/like_icon.svg" alt="like" class="view-like__icon" />
+                        <div class="view-like__count">17</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-info__date -->
+                </div>
+                <!-- /.card-info featured-card -->
+              </div>
+            </div>
+            <div class="swiper-slide featured-slide">
+              <div class="container">
+                <div class="card-info featured-card">
+                  <div class="card-info__img">
+                    <img src="img/featured.png" alt="featured" />
+                  </div>
+                  <div class="featured-card__tag">
+                    <img src="icons/arcticle.svg" alt="arcticle" />
+                    <span>ARTICLE</span>
+                  </div>
+                  <div class="featured-card__select">
+                    <img src="icons/star_featured.svg" alt="" />
+                  </div>
+                  <!-- /.featured-card__select -->
+                  <div class="title title__card-info">Home to the very best of creativity</div>
+                  <div class="post-publish card-info-calendar">
+                    <div class="post-publish__dates">
+                      <div class="post-publish__icon">
+                        <img
+                          src="icons/calendar_icon.svg"
+                          alt="calendar"
+                          class="post-publish__img card-info-calendar__img"
+                        />
+                      </div>
+                      <div class="post-publish__date card-info-calendar__date">21.12.21</div>
+                    </div>
+                    <div class="views">
+                      <div class="view">
+                        <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
+                        <div class="view__count">308</div>
+                      </div>
+                      <div class="view-like">
+                        <img src="icons/like_icon.svg" alt="like" class="view-like__icon" />
+                        <div class="view-like__count">17</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card-info__date -->
+                </div>
+                <!-- /.card-info featured-card -->
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- /.featured-slider -->
+      </section>
+      <!-- /.like-post -->
     </div>
-    <!-- /.content-wrapper -->
-    <section class="featured-post">
-      <div class="title title__featured-post">you may also like this</div>
-      <div class="featured-slider swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide featured-slide">
-            <div class="container">
-              <div class="card-info featured-card">
-                <div class="card-info__img">
-                  <img src="img/featured.png" alt="featured" />
-                </div>
-                <div class="featured-card__tag">
-                  <img src="icons/arcticle.svg" alt="arcticle" />
-                  <span>ARTICLE</span>
-                </div>
-                <div class="featured-card__select">
-                  <img src="icons/star_featured.svg" alt="" />
-                </div>
-                <!-- /.featured-card__select -->
-                <div class="title title__card-info">Home to the very best of creativity</div>
-                <div class="post-publish card-info-calendar">
-                  <div class="post-publish__dates">
-                    <div class="post-publish__icon">
-                      <img
-                        src="icons/calendar_icon.svg"
-                        alt="calendar"
-                        class="post-publish__img card-info-calendar__img"
-                      />
-                    </div>
-                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
-                  </div>
-                  <div class="views">
-                    <div class="view">
-                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
-                      <div class="view__count">308</div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-info__date -->
-              </div>
-              <!-- /.card-info featured-card -->
-            </div>
-          </div>
-          <div class="swiper-slide featured-slide">
-            <div class="container">
-              <div class="card-info featured-card">
-                <div class="card-info__img">
-                  <img src="img/featured.png" alt="featured" />
-                </div>
-                <div class="featured-card__tag">
-                  <img src="icons/arcticle.svg" alt="arcticle" />
-                  <span>ARTICLE</span>
-                </div>
-                <div class="featured-card__select">
-                  <img src="icons/star_featured.svg" alt="" />
-                </div>
-                <!-- /.featured-card__select -->
-                <div class="title title__card-info">Home to the very best of creativity</div>
-                <div class="post-publish card-info-calendar">
-                  <div class="post-publish__dates">
-                    <div class="post-publish__icon">
-                      <img
-                        src="icons/calendar_icon.svg"
-                        alt="calendar"
-                        class="post-publish__img card-info-calendar__img"
-                      />
-                    </div>
-                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
-                  </div>
-                  <div class="views">
-                    <div class="view">
-                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
-                      <div class="view__count">308</div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-info__date -->
-              </div>
-              <!-- /.card-info featured-card -->
-            </div>
-          </div>
-          <div class="swiper-slide featured-slide">
-            <div class="container">
-              <div class="card-info featured-card">
-                <div class="card-info__img">
-                  <img src="img/featured.png" alt="featured" />
-                </div>
-                <div class="featured-card__tag">
-                  <img src="icons/arcticle.svg" alt="arcticle" />
-                  <span>ARTICLE</span>
-                </div>
-                <div class="featured-card__select">
-                  <img src="icons/star_featured.svg" alt="" />
-                </div>
-                <!-- /.featured-card__select -->
-                <div class="title title__card-info">Home to the very best of creativity</div>
-                <div class="post-publish card-info-calendar">
-                  <div class="post-publish__dates">
-                    <div class="post-publish__icon">
-                      <img
-                        src="icons/calendar_icon.svg"
-                        alt="calendar"
-                        class="post-publish__img card-info-calendar__img"
-                      />
-                    </div>
-                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
-                  </div>
-                  <div class="views">
-                    <div class="view">
-                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
-                      <div class="view__count">308</div>
-                    </div>
-                    <div class="view-like">
-                      <img src="icons/like_icon.svg" alt="like" class="view-like__icon" />
-                      <div class="view-like__count">17</div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-info__date -->
-              </div>
-              <!-- /.card-info featured-card -->
-            </div>
-          </div>
-          <div class="swiper-slide featured-slide">
-            <div class="container">
-              <div class="card-info featured-card">
-                <div class="card-info__img">
-                  <img src="img/featured.png" alt="featured" />
-                </div>
-                <div class="featured-card__tag">
-                  <img src="icons/arcticle.svg" alt="arcticle" />
-                  <span>ARTICLE</span>
-                </div>
-                <div class="featured-card__select">
-                  <img src="icons/star_featured.svg" alt="" />
-                </div>
-                <!-- /.featured-card__select -->
-                <div class="title title__card-info">Home to the very best of creativity</div>
-                <div class="post-publish card-info-calendar">
-                  <div class="post-publish__dates">
-                    <div class="post-publish__icon">
-                      <img
-                        src="icons/calendar_icon.svg"
-                        alt="calendar"
-                        class="post-publish__img card-info-calendar__img"
-                      />
-                    </div>
-                    <div class="post-publish__date card-info-calendar__date">21.12.21</div>
-                  </div>
-                  <div class="views">
-                    <div class="view">
-                      <img src="icons/visibility_icon.svg" alt="view" class="view__icon" />
-                      <div class="view__count">308</div>
-                    </div>
-                    <div class="view-like">
-                      <img src="icons/like_icon.svg" alt="like" class="view-like__icon" />
-                      <div class="view-like__count">17</div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-info__date -->
-              </div>
-              <!-- /.card-info featured-card -->
-            </div>
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-      <!-- /.featured-slider -->
-    </section>
-    <!-- /.like-post -->
+    <!-- /.body-page -->
     <footer class="footer">
       <div class="container-fluid footer-container">
         <div class="row footer-wrapper">

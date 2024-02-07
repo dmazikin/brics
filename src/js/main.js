@@ -21,8 +21,8 @@ const swiper = new Swiper(".carousel-slider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".index-swiper-next",
+    prevEl: ".index-swiper-prev",
   },
 
   // And if we need scrollbar

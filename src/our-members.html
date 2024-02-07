@@ -13,7 +13,13 @@
   <body>
     <header class="header">
       <div class="container-header-top">
-        <div class="navbar-top">
+        <div class="container d-flex justify-content-between">
+          <form class="d-flex header-search">
+            <input class="form-control me-2 header-search__input" type="search" aria-label="Search" />
+            <button class="btn btn-outline-success btn__search" type="submit">
+              <img src="icons/search_head.svg" alt="search" />
+            </button>
+          </form>
           <div class="header-auth">
             <a href="#" class="btn btn__join">Join</a>
             <a href="#" class="header-auth__login btn mobile_hidden_auth">Log In</a>
@@ -36,17 +42,8 @@
         <!-- /.navbar-top -->
       </div>
       <!-- /.container-header-top -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
-          </a>
-          <form class="d-flex header-form-search">
-            <input class="form-control me-2 header-form-search__input" type="search" aria-label="Search" />
-            <button class="btn btn-outline-success btn__search" type="submit">
-              <img src="icons/search_head.svg" alt="search" />
-            </button>
-          </form>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-test">
+        <div class="container container-mobile">
           <button
             class="navbar-toggler"
             type="button"
@@ -58,6 +55,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <a class="navbar-brand" href="/">
+            <img class="header__logo-img" src="icons/logo.svg" alt="logo" />
+          </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="mobile-head">
               <div class="title title__mobile-menu">MENU</div>
@@ -80,39 +80,102 @@
               </div>
             </div>
             <!-- /.mobile-head -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-test">
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Who we are
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">National Chapters </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Our members</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Our partners</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="national.html">National Chapters</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  What we do
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="about.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Documents</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Courses</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="our-members.html">Our members</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Events and News
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="multimedia.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Calendar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="sponsors.html">Multimedia</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="calendar.html">Calendar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="project.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="bussines.html">Business</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Documents</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="multimedia.html">Multimedia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-item__last-heart" href="sponsors.html"><span>❤️</span>Sponsors</a>
+              <li class="nav-item nav-item-test dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-target="#"
+                  href="about.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact us
+                </a>
+                <ul class="dropdown-menu dropdown-menu-nav" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="multimedia.html">Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item dropdown-menu-nav-item" href="#">Business</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -120,195 +183,198 @@
       </nav>
     </header>
     <!-- /.header -->
-    <div class="flags">
-      <div class="container flags-conatiner">
-        <div class="row">
-          <div class="col-12 col-lg-6 col-xl-6 flags-wrapper">
-            <div class="flags-item">
-              <img src="img/flags/brazil.png" alt="" class="flags-img" />
+    <div class="body-page">
+      <div class="flags">
+        <div class="container flags-conatiner">
+          <div class="row">
+            <div class="col-12 col-lg-6 col-xl-6 flags-wrapper">
+              <div class="flags-item">
+                <img src="img/flags/brazil.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/russia.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/india.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/china.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/africa.png" alt="" class="flags-img" />
+              </div>
             </div>
-            <div class="flags-item">
-              <img src="img/flags/russia.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/india.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/china.png" alt="" class="flags-img" />
-            </div>
-            <div class="flags-item">
-              <img src="img/flags/africa.png" alt="" class="flags-img" />
+            <div class="col-12 col-lg-6 col-xl-6 flags-wrapper">
+              <div class="flags-item">
+                <img src="img/flags/brazil.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/russia.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/india.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/china.png" alt="" class="flags-img" />
+              </div>
+              <div class="flags-item">
+                <img src="img/flags/africa.png" alt="" class="flags-img" />
+              </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 col-xl-6 flags-wrapper">
-            <div class="flags-item">
-              <img src="img/flags/brazil.png" alt="" class="flags-img" />
+        </div>
+        <div class="globus">
+          <img src="icons/globus.svg" alt="" />
+        </div>
+        <div class="title title__flags">BRICS Women's Business Alliance in persons</div>
+        <div class="line-box">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <!-- /.line-box -->
+      </div>
+      <!-- /.flags -->
+      <div class="country country_pb-200">
+        <div class="container">
+          <div class="row">
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/brazil.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Ana Costa</div>
+                </div>
+                <div class="country-item__desc">Finance and Strategy Vice President</div>
+                <div class="country-item__specialty">Santander Brazil</div>
+              </div>
             </div>
-            <div class="flags-item">
-              <img src="img/flags/russia.png" alt="" class="flags-img" />
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/china/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/china.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Diane Wang</div>
+                </div>
+                <div class="country-item__desc">Founder and Chairperson</div>
+                <div class="country-item__specialty">Dhgate.com</div>
+              </div>
             </div>
-            <div class="flags-item">
-              <img src="img/flags/india.png" alt="" class="flags-img" />
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/brazil.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Andrea Marques de Almeida</div>
+                </div>
+                <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
+                <div class="country-item__specialty">Petrobras</div>
+              </div>
             </div>
-            <div class="flags-item">
-              <img src="img/flags/china.png" alt="" class="flags-img" />
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/russia/CHRISTINA_ROMANOVSKAYA.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/russia.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">CHRISTINA ROMANOVSKAYA</div>
+                </div>
+                <div class="country-item__desc">CEO</div>
+                <div class="country-item__specialty">Lazarevskoye</div>
+              </div>
             </div>
-            <div class="flags-item">
-              <img src="img/flags/africa.png" alt="" class="flags-img" />
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/india/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/india.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Falguni Nayar</div>
+                </div>
+                <div class="country-item__desc">Founder & CEO</div>
+                <div class="country-item__specialty">Nykaa</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/russia.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Andrea Marques de Almeida</div>
+                </div>
+                <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
+                <div class="country-item__specialty">Petrobras</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/brazil.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Ana Costa</div>
+                </div>
+                <div class="country-item__desc">Finance and Strategy Vice President</div>
+                <div class="country-item__specialty">Santander Brazil</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/china/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/china.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Diane Wang</div>
+                </div>
+                <div class="country-item__desc">Founder and Chairperson</div>
+                <div class="country-item__specialty">Dhgate.com</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Andrea_Almeida.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/brazil.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Andrea Marques de Almeida</div>
+                </div>
+                <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
+                <div class="country-item__specialty">Petrobras</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/russia/CHRISTINA_ROMANOVSKAYA.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/russia.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">CHRISTINA ROMANOVSKAYA</div>
+                </div>
+                <div class="country-item__desc">CEO</div>
+                <div class="country-item__specialty">Lazarevskoye</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/india/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/india.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Falguni Nayar</div>
+                </div>
+                <div class="country-item__desc">Founder & CEO</div>
+                <div class="country-item__specialty">Nykaa</div>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+              <div class="country-item">
+                <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
+                <div class="country-item-head">
+                  <img src="img/flags/russia.png" alt="" class="country-item-head__img" />
+                  <div class="country-item__fio">Andrea Marques de Almeida</div>
+                </div>
+                <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
+                <div class="country-item__specialty">Petrobras</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="globus">
-        <img src="icons/globus.svg" alt="" />
-      </div>
-      <div class="title title__flags">BRICS Women's Business Alliance in persons</div>
-      <div class="line-box">
-        <div class="line"></div>
-        <div class="circle"></div>
-        <div class="line"></div>
-      </div>
-      <!-- /.line-box -->
     </div>
-    <!-- /.flags -->
-    <div class="country country_pb-200">
-      <div class="container">
-        <div class="row">
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/brazil.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Ana Costa</div>
-              </div>
-              <div class="country-item__desc">Finance and Strategy Vice President</div>
-              <div class="country-item__specialty">Santander Brazil</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/china/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/china.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Diane Wang</div>
-              </div>
-              <div class="country-item__desc">Founder and Chairperson</div>
-              <div class="country-item__specialty">Dhgate.com</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/brazil.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Andrea Marques de Almeida</div>
-              </div>
-              <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
-              <div class="country-item__specialty">Petrobras</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/russia/CHRISTINA_ROMANOVSKAYA.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/russia.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">CHRISTINA ROMANOVSKAYA</div>
-              </div>
-              <div class="country-item__desc">CEO</div>
-              <div class="country-item__specialty">Lazarevskoye</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/india/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/india.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Falguni Nayar</div>
-              </div>
-              <div class="country-item__desc">Founder & CEO</div>
-              <div class="country-item__specialty">Nykaa</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/russia.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Andrea Marques de Almeida</div>
-              </div>
-              <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
-              <div class="country-item__specialty">Petrobras</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/brazil.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Ana Costa</div>
-              </div>
-              <div class="country-item__desc">Finance and Strategy Vice President</div>
-              <div class="country-item__specialty">Santander Brazil</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/china/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/china.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Diane Wang</div>
-              </div>
-              <div class="country-item__desc">Founder and Chairperson</div>
-              <div class="country-item__specialty">Dhgate.com</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Andrea_Almeida.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/brazil.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Andrea Marques de Almeida</div>
-              </div>
-              <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
-              <div class="country-item__specialty">Petrobras</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/russia/CHRISTINA_ROMANOVSKAYA.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/russia.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">CHRISTINA ROMANOVSKAYA</div>
-              </div>
-              <div class="country-item__desc">CEO</div>
-              <div class="country-item__specialty">Lazarevskoye</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/india/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/india.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Falguni Nayar</div>
-              </div>
-              <div class="country-item__desc">Founder & CEO</div>
-              <div class="country-item__specialty">Nykaa</div>
-            </div>
-          </div>
-          <div class="col col-xl-4">
-            <div class="country-item">
-              <img src="img/chapter/Ana_Costa.png" alt="" class="country-item__img" />
-              <div class="country-item-head">
-                <img src="img/flags/russia.png" alt="" class="country-item-head__img" />
-                <div class="country-item__fio">Andrea Marques de Almeida</div>
-              </div>
-              <div class="country-item__desc">Executive Director for Finance and Investors Relations</div>
-              <div class="country-item__specialty">Petrobras</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- /.body-page -->
     <footer class="footer">
       <div class="container-fluid footer-container">
         <div class="row footer-wrapper">
