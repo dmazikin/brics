@@ -50,7 +50,7 @@
 }
 
 .index-slider {
-    height: 630px;
+    height: 100%;
     width: 100%;
     background-color: #EDEDF2;
 }
@@ -72,6 +72,20 @@
     background: #fff;
     box-shadow: 1px 4px 2px 0px rgba(0, 0, 0, 0.25);
 } */
+
+.promo-detail-page>.index-slider>.index-swiper-prev,
+.promo-detail-page>.index-slider>.index-swiper-next {
+    top: 15em;
+}
+
+.promo-index>.index-slider>.index-swiper-prev,
+.promo-index>.index-slider>.index-swiper-next {
+    top: 20em;
+}
+
+.btn-course-more {
+    margin-top: 30px;
+}
 
 .about {
     position: relative;

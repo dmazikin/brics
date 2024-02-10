@@ -473,8 +473,12 @@
     .carousel-mobile {
         display: block;
         width: 100%;
-        height: 430px;
+        height: 300px;
         margin-top: 49px;
+    }
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        opacity: 1;
     }
     .carousel-slide-mobile>img {
         width: 560px;

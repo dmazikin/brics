@@ -17,6 +17,30 @@ const swiper = new Swiper(".carousel-slider", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".index-swiper-next",
+    prevEl: ".index-swiper-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+const mobileSliderDetailCard = new Swiper(".carousel-mobile", {
+  // Optional parameters
+  direction: "horizontal",
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  centeredSlides: true,
+  // If we need pagination
+  pagination: {
+    clickable: true,
+    el: ".swiper-pagination",
   },
 
   // Navigation arrows
@@ -39,6 +63,7 @@ const featureSwiper = new Swiper(".featured-slider", {
   centeredSlides: true,
   // If we need pagination
   pagination: {
+    clickable: true,
     el: ".swiper-pagination",
   },
   // Navigation arrows
@@ -62,6 +87,7 @@ const indexSlider = new Swiper(".index-slider", {
   autoHeight: true,
   // If we need pagination
   pagination: {
+    clickable: true,
     el: ".swiper-pagination",
   },
   // Navigation arrows
@@ -95,6 +121,7 @@ const indexPageSlider = new Swiper(".index-page-slider", {
   },
   // If we need pagination
   pagination: {
+    clickable: true,
     el: ".swiper-pagination",
   },
   // Navigation arrows
@@ -128,6 +155,7 @@ const indexSliderPartners = new Swiper(".index-slider-partners", {
   },
   // If we need pagination
   pagination: {
+    clickable: true,
     el: ".swiper-pagination",
   },
   // Navigation arrows
